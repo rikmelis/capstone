@@ -1,0 +1,79 @@
+.title {
+  background-color: #043a4c;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.page {
+  margin: 0 auto 20px auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+  	font-size: 26px;
+  	margin-top: 80px;
+  	margin-bottom: 0px;
+  }
+
+  .block {
+
+  	&:first-child {
+  		margin-top: 80px;
+  		margin-bottom: 0;
+  		font-size: 22px;
+  	}
+
+  	margin: 30px 0;
+  	text-align: center;
+  	font-size: 18px;
+  	line-height: 30px;
+
+  	&.with-image {
+  		&.main-findings-report {
+  			background-image: url('main-findings-report.png');
+  		}
+
+  		&.methodology-report {
+  			background-image: url('methodology-report.png');
+  		}
+
+  		color: white;
+  		width: 100%;
+  		background-size: cover;
+
+  		.darkening {
+  			background-color: black;
+  			opacity: 0.6;
+  			padding: 70px 30px;
+  			margin: auto;
+  		}
+
+  		.subtitle {
+  			font-size: 24px;
+  			font-weight: bold;
+  			margin-bottom: 30px;
+  		}
+  	}
+  }
+
+  .download-button {
+  	padding: 15px 25px;
+  	color: white;
+  	font-weight: bold;
+  	font-size: 20px;
+  	text-decoration: none;
+  	background-color: #3CA4C3;
+  	margin: 20px;
+  	border-radius: 5px;
+
+  	svg {
+  		width: 25px;
+  		margin-right: 10px;
+  	}
+  }
+}
