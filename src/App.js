@@ -43,7 +43,7 @@ function App() {
         </div>
         <h3>Get in touch!</h3>
         <div className={'block'}>
-          If you have questions or suggestions concerning our project, feel free to contact us!
+          If you have questions or suggestions concerning our project, feel free to <a href={`mailto:theoda.woeffray@bluewin.ch`}>contact us</a>!
         </div>
       </div>
     </div>
