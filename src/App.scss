@@ -1,3 +1,7 @@
+.container {
+  min-width: 600px;
+}
+
 .title {
   background-color: #043a4c;
   color: white;
@@ -21,37 +25,31 @@
   }
 
   .block {
-
   	&:first-child {
   		margin-top: 80px;
   		margin-bottom: 0;
   		font-size: 22px;
   	}
 
-  	margin: 30px 0;
+  	margin: 30px;
   	text-align: center;
   	font-size: 18px;
   	line-height: 30px;
 
   	&.with-image {
   		&.main-findings-report {
-  			background-image: url('main-findings-report.png');
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('main-findings-report.png');
+        background-size: cover;
   		}
 
   		&.methodology-report {
-  			background-image: url('methodology-report.png');
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('methodology-report.png');
+        background-size: cover;
   		}
 
-  		color: white;
-  		width: 100%;
-  		background-size: cover;
-
-  		.darkening {
-  			background-color: black;
-  			opacity: 0.6;
-  			padding: 70px 30px;
-  			margin: auto;
-  		}
+      margin: 30px 0;
+      color: white;
+      padding: 70px 30px;
 
   		.subtitle {
   			font-size: 24px;
