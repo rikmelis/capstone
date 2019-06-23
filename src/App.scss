@@ -1,14 +1,28 @@
 .container {
-  min-width: 600px;
+  min-width: 800px;
+  position: relative;
+}
+
+.language-selector {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  cursor: pointer;
 }
 
 .title {
   background-color: #043a4c;
   color: white;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   text-align: center;
   padding: 50px 0;
+
+  .subtitle {
+    font-weight: normal;
+    font-size: 40px;
+  }
 }
 
 .page {
@@ -17,61 +31,169 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  h3 {
-  	font-size: 26px;
-  	margin-top: 80px;
-  	margin-bottom: 0px;
+h3 {
+  font-size: 26px;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.intro {
+  margin: 80px 30px 0 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.block {
+  margin: 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+
+  &.with-image {
+    background-color: #043a4c;
+    text-align: justify;
+    margin: 30px 0;
+    color: white;
+    padding: 70px 30px;
+
+    .subheader {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
   }
+}
+
+.download-button {
+  padding: 15px 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #3CA4C3;
+  margin: 20px;
+  border-radius: 5px;
+
+  svg {
+    width: 25px;
+    margin-right: 10px;
+  }
+}
+
+.pictures {
+  margin: 30px 0;
+  display: flex;
+
+  .picture {
+    margin: 0 10px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+
+    .text {
+      color: white;
+      z-index: 2;
+      height: inherit;
+      width: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      opacity: 0;
+      background-color: rgba(4, 59, 76, 0.7);
+      transition: opacity 500ms;
+      -webkit-transition: opacity 500ms;
+      -moz-transition: opacity 500ms;
+      -ms-transition: opacity 500ms;
+      -o-transition: opacity 500ms;
+    }
+
+    &:hover {
+      .text {
+        opacity: 1;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .background-layer {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 50%;
+      background-color: rgba(4, 59, 76, 0.1);
+    }
+  }
+}
+
+.footer {
+  background-color: #043a4c;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 5px;
 
   .block {
-  	&:first-child {
-  		margin-top: 80px;
-  		margin-bottom: 0;
-  		font-size: 22px;
-  	}
+    margin-bottom: 10px;
+  }
+}
 
-  	margin: 30px;
-  	text-align: center;
-  	font-size: 18px;
-  	line-height: 30px;
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  	&.with-image {
-  		&.main-findings-report {
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('main-findings-report.png');
-        background-size: cover;
-  		}
-
-  		&.methodology-report {
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('methodology-report.png');
-        background-size: cover;
-  		}
-
-      margin: 30px 0;
-      color: white;
-      padding: 70px 30px;
-
-  		.subtitle {
-  			font-size: 24px;
-  			font-weight: bold;
-  			margin-bottom: 30px;
-  		}
-  	}
+  svg {
+    width: 50px;
+    text-decoration: none;
+    color: white;
   }
 
-  .download-button {
-  	padding: 15px 25px;
-  	color: white;
-  	font-weight: bold;
-  	font-size: 20px;
-  	text-decoration: none;
-  	background-color: #3CA4C3;
-  	margin: 20px;
-  	border-radius: 5px;
+  a {
+    padding: 10px;
+  }
 
-  	svg {
-  		width: 25px;
-  		margin-right: 10px;
-  	}
+  .github-link {
+    margin-top: 30px;
+  }
+}
+
+.graphs {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  .selector {
+    display: flex;
+    cursor: pointer;
+    background-color: rgba(4, 59, 76, 0.3);
+
+
+    .select-button {
+      padding: 8px 0;
+      flex: 1;
+      text-align: center;
+
+      &.selected {
+        font-weight: bold;
+        background-color: #043a4c;
+        color: white;
+      }
+    }
   }
 }

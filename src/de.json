@@ -1,0 +1,33 @@
+{
+	"page_title": "Analysing Human Trafficking",
+	"subtitle": "A Machine Learning Approach",
+	"introduction": {
+		"p1": "Menschenhandel betrifft weltweit Millionen von Menschen. Ein vertieftes Verständnis darüber, wer Opfer welcher Art von Menschenhandel wird, ist für die Prävention und den Schutz vor Menschenhandel unerlässlich. Ziel unseres Projekts \"Analysing Human Trafficking – A Machine Learning Approach\" war es, eine Typologie der Fälle von Menschenhandel zu erstellen. Dazu haben wir Machine Learning Techniken auf Individualdaten von Opfern von Menschenhandel, die von der Internationalen Organisation für Migration (IOM) bereitgestellt wurden, angewendet.",
+		"p2": "Wir stellen fest, dass beispielsweise in Südosteuropa und Zentralasien das Geschlecht ein bestimmendes Merkmal für die Art der Ausbeutung zu sein scheint, während in der Region Asien und Pazifik identifizierte Opfer in der Regel unabhängig von ihrem Geschlecht Zwangsarbeit ausgesetzt sind. Außerdem ist zu erkennen, dass der Zivilstand des identifizierten Opfers, die Aktivität, die diese Person im Zielland zu unternehmen glaubte und wie der Kontakt zum Rekrutierer aufgenommen wurde, Einfluss darauf hat, wo und wie eine Person ausgebeutet wird. Durch unsere Machine Learning-Strategien konnten wir zudem komplexe Wechselwirkungen solcher Merkmale abbilden. Detaillierte Informationen zu unseren wichtigsten Ergebnissen sowie zu unserem methodischen Ansatz finden Sie in den beiden nachfolgenden Berichten."
+	},
+	"header": {
+		"reports": "Die Berichte",
+		"project": "Das Projekt",
+		"team": "Das Team",
+		"get_in_touch": "Kontakt"
+	},
+	"subheader": {
+		"main_findings": "Hauptergebnisbericht",
+		"methodology": "Methodikbericht"
+	},
+	"block": {
+		"main_findings": {
+			"p1": "Unsere Analyse ist die erste, die Machine Learning Techniken auf die von IOM bereitgestellte Datenbank all ihrer registrierten Opfer anwendet. Die Datenbank beinhaltet qualitative und quantitative Informationen über mehr als 50'000 registrierte Opfer, die von IOM-Fallarbeitern befragt wurden. Die Ergebnisse unserer Analyse stützen zuvor formulierte Annahmen darüber, wie die Merkmale einer Person, wie beispielsweise Alter, Geschlecht, Herkunft und wirtschaftlicher Status sie mehr oder weniger anfällig für bestimmte Arten der Ausbeutung machen. Beispiele für solche Annahmen sind, dass junge Frauen eher Opfer sexueller Ausbeutung werden und dass Arbeitsmigration den Einzelnen vermutlich anfälliger für Ausbeutung macht. Unsere Analyse zeigt jedoch auch bisher selten untersuchte, komplizierte Muster und das unterschiedliche Zusammenspiel von Merkmalen der gemeldeten Opfer, ihrem Eintritt in den Prozess des Menschenhandels und die Art der Ausbeutung in den verschiedenen Regionen auf. Die drei Klassifikationsbäume stellen die wichtigsten Ergebnisse unserer Analyse dar.",
+			"p2": "Der untenstehende Klassifikationsbaum \"Südosteuropa und Zentralasien\" zeigt zum Beispiel, dass Männer viel häufiger Zwangsarbeit ausgesetzt sind. Für Frauen in dieser Region wird der Zivilstand jedoch zu einem bestimmenden Opfermerkmal. Frauen, deren Familienstand Common Law, geschieden, getrennt oder ledig ist und die nicht glaubten, dass ihre Tätigkeit bei der Ankunft Fabrikarbeit sein würde, werden viel häufiger sexuell ausgebeutet, während Frauen, die verheiratet oder verwitwet sind und rekrutiert wurden, eher Zwangsarbeit ausgesetzt sind."
+		},
+		"methodology": "Der Methodikbericht beschreibt die im Projekt verwendeten methodischen Ansätze. Wir erläutern ausführlich jeden Schritt unserer Analyse, von der Datenaufbereitung bis hin zu den statistischen Methoden. Den Techniken des Machine Learnings - Clustering-Analyse und Klassifikationsbaumanalyse - wurde ein erhebliches Gewicht beigemessen. Einer der Vorteile der Anwendung dieser Art von Techniken auf Daten von Opfern des Menschenhandels besteht darin, dass sie eine neue Perspektive ermöglichen: Anstatt sich von vordefinierten Vorstellungen leiten zu lassen, welche Opfereigenschaften wie interagieren und welche Muster produzieren, helfen uns die gewählten maschinellen Lernansätze, Muster zu erkennen, wie sie in den Daten vorkommen. Darüber hinaus diskutiert der Bericht einige der Herausforderungen – sowie deren Lösung -, die bei der Arbeit mit Observationsdaten aus Registrierungsformularen auftreten, z.B. in Bezug auf die Datenkodierung, und zeigt einige Möglichkeiten zur Verbesserung der Datenerhebung auf.",
+		"project": "\"Analysing Human Trafficking – A Machine Learning Approach\" ist ein gemeinsames Projekt der Internationalen Organisation für Migration (IOM) und des Instituts für Politikwissenschaft der Universität Zürich (UZH). Das Projekt wurde von Masterstudierenden im Rahmen eines Capstone Kurses durchgeführt - einem innovativen Unterrichtsformat, das den Studierenden die Möglichkeit geben soll, in einer kleinen Gruppe selbständig zu arbeiten, ihre Fähigkeiten zu entwickeln und sie auf praktische Probleme anzuwenden. Weitere Informationen zu den Capstone Kursen finden Sie",
+		"here": "hier",
+		"team": "Das Team hinter \"Analysing Human Trafficking – A Machine Learning Approach\" besteht aus fünf Masterstudierenden der Universität Zürich: Janine Albiez, Patrik Aus der Au, Saro Gibilisco, Théoda Woeffray und Jenny Yin. Das Projekt wurde unter der Leitung und mit der wertvollen Unterstützung von Prof. Dr. Marco Steenbergen und Dr. Judith Spirig realisiert.",
+		"get_in_touch": "Wenn Sie Fragen oder Anregungen zu unserem Projekt haben, können Sie uns gerne eine E-Mail schicken!"
+	},
+	"button": {
+		"main_findings": "Hauptergebnisbericht herunterladen",
+		"methodology": "Methodikbericht herunterladen"
+	}
+}

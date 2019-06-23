@@ -1,0 +1,33 @@
+{
+	"page_title": "Analysing Human Trafficking",
+	"subtitle": "A Machine Learning Approach",
+	"introduction": {
+		"p1": "Human trafficking affects millions of people worldwide. For prevention of and protection from human trafficking, an in-depth understanding of who falls victim to which type of human trafficking is essential. The aim of our project, \"Analysing Human Trafficking - A Machine Learning Approach\" was to create a typology of human trafficking cases by applying machine learning techniques to individual-level human trafficking victims data provided by the International Organization for Migration (IOM).",
+		"p2": "We find that, for example, in South-Eastern Europe and Central Asia gender seems to be a determining characteristic for the type of exploitation, while in the Asia and the Pacific region, identified victims tend to be subjected to forced labour regardless of their gender. Also, we find that the marital status of the identified victim, the activity this person believed to undertake at the country of destination and how the contact to the recruiter was initiated influences where and how an individual is being exploited. Through our machine learning strategies, we were further able to map complex interactions of such characteristics. Detailed information on our main findings as well as our methodological approach can be found in the two reports below."
+	},
+	"header": {
+		"reports": "The Reports",
+		"project": "The Project",
+		"team": "The Team",
+		"get_in_touch": "Get in touch!"
+	},
+	"subheader": {
+		"main_findings": "Main Findings Report",
+		"methodology": "Methodology Report"
+	},
+	"block": {
+		"main_findings": {
+			"p1": "Our analysis of human trafficking victim characteristics is the first to apply machine learning techniques to IOM’s database of all their registered victims. The database consists of qualitative and quantitative information on over 50’000 registered victims interviewed by IOM case workers. Our analysis’ findings support previously formulated assumptions on how an individual’s characteristics, such as age, gender, origin and economic status renders them more or less vulnerable to specific types of exploitation. Examples of such assumptions are that young women are believed to tend to be victims of sexual exploitation and that labour migration presumably renders individuals more vulnerable to exploitation. However, our analysis also reveals as-of-yet rarely studied, intricate patterns of how reported victims’ characteristics, their entry into the trafficking process, and type of exploitation interact differently across regions. The three classification trees depict the main results of our analysis.",
+			"p2": "The classification tree \"South-Eastern Europe and Central Asia\" below, for example, shows that men are much more likely to be subjected to forced labour. For women in this region, however, marital status becomes a defining victim characteristic. Women whose marital status is common law, divorced, separated, or single, and who did not believe that their activity upon arrival was going to be factory work, are much more likely to be sexually exploited, while women who are married or widowed and have been recruited are more likely to be subjected to forced labour."
+		},
+		"methodology": "The methodology report describes in more detail the methodological approaches used in the project. We extensively describe every step of our analysis from data preparation up to statistical methods. Significant weight has been given to machine learning techniques – clustering analysis and classification tree analysis. One of the advantages of applying these types of techniques to human trafficking victim data is that it allows for a new perspective: Rather than being guided by pre-defined notions of which victim characteristics interact how and produce which patterns, the machine learning approaches chosen help us detect patterns as they occur in the data. Moreover, the report discusses some of the challenges - and solution to those challenges - involved when working with observational data from register forms, e.g., regarding the data coding, revealing some potential for improvement of data collection.",
+		"project": "\"Analysing Human Trafficking – A Machine Learning Approach\" is a joint project between the International Organization for Migration (IOM) and the Department of Political Science at the University of Zurich (UZH). The project was carried out by Master students within a Capstone Course - an innovative teaching format, with the aim to provide students with the opportunity to work independently in a small group, develop their skills and apply them to practical problems. More information on Capstone Courses is available",
+		"here": "here",
+		"team": "The team behind \"Analysing Human Trafficking - A Machine Learning Approach\" consists of five Master students at the University of Zurich: Janine Albiez, Patrik Aus der Au, Saro Gibilisco, Théoda Woeffray, and Jenny Yin. The project was realised under the supervision and with the valuable support of Prof. Dr. Marco Steenbergen and Dr. Judith Spirig.",
+		"get_in_touch": "If you have questions or suggestions concerning our project, feel free to contact us."
+	},
+	"button": {
+		"main_findings": "Download Main Findings Report",
+		"methodology": "Download Methodology Report"
+	}
+}

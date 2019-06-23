@@ -1,54 +1,95 @@
 import React from 'react';
-import {Download} from 'styled-icons/boxicons-regular';
+import {Download as DownloadIcon} from 'styled-icons/boxicons-regular';
+import {MailOutline as MailIcon} from 'styled-icons/material';
+import {Github as GithubIcon} from 'styled-icons/boxicons-logos';
 import MainFindingsPdf from './main-findings.pdf';
 import MethodologyPdf from './methodology.pdf';
+import Pictures from './Pictures.js';
+import Graphs from './Graphs.js';
+import {translate} from './translate.js';
 import './App.scss';
 
-function App() {
-  return (
-    <div className={'container'}>
-      <div className='title'>Analysing Human Trafficking</div>
-      <div className={'page'}>
-        <div className={'block'}>
-          Human trafficking affects all regions worldwide and is part of a rapidly growing business of international crime. For prevention and protection in human trafficking, an in-depth understanding of victim characteristics is essential. The aim of "Analysing Human Trafficking" was to create a typology of human trafficking cases by applying machine learning techniques to individual data provided by the International Organization for Migration (IOM). Detailed information on our main findings as well as our methodological approach can be found in the two reports below.
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      language: 'en',
+    };
+  }
+
+  translate(key) {
+    return translate(this.state.language, key);
+  }
+
+  changeLanguage(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    this.setState({
+      language: this.state.language === 'en' ? 'de' : 'en',
+    });
+  }
+
+  render() {
+    return (
+      <div className={'container'}>
+        <div className={'language-selector'} onClick={(event) => this.changeLanguage(event)}>
+          {this.state.language === 'en' ? 'Deutsch' : 'English'}
         </div>
-        <h3>The Reports</h3>
-        <div className={'block with-image main-findings-report'}>
-          <div className={'subtitle'}>Main Findings Report</div>
-          <div className='text'>
-            Our analysis supports some conventional theoretical assumptions regarding factors closely linked to trafficking victims such as age, gender, origin, and individual’s economic status. However, it reveals intricate patterns with regard to how victim characteristics, their entry into the trafficking process, as well as type of exploitation interact together across regions. Accordingly, our results emphasise that the victim’s marital status, the activity a victim believes to be undertaken in the destination country, and the victim’s initial contact to the recruiter are essential factors in determining the type of exploitation of the victims.
+        <div className='title'>
+          <div>{this.translate('page_title')}</div>
+          <div className={'subtitle'}>{this.translate('subtitle')}</div>
+        </div>
+        <div className={'page'}>
+          <div className={'intro'}>
+            <p>{this.translate(['introduction', 'p1'])}</p>
+            <p>{this.translate(['introduction', 'p2'])}</p>
           </div>
-        </div>
-        <a className={'download-button'} href={MainFindingsPdf} target='_blank' rel='noopener noreferrer'>
-          <Download/>
-          Download Main Findings Report
-        </a>
-        <div className={'block with-image methodology-report'}>
-          <div className={'subtitle'}>Methodology Report</div>
-          <div className='text'>
-            The scope of this report is to elucidate the innovative methodological approaches used in the project. The reader can follow our analysis in depth from the data preparation up to statistical methods. Significant weight has been given to machine learning techniques – clustering analysis and classification tree analysis. The great advantage of these types of techniques is that they presuppose a certain degree of inductive reasoning. This allowed us to detect characteristics of victims less influenced by pre-defined theoretical assumptions. Moreover, the report covers some problems that emerged during the analysis regarding the data coding, revealing some potential for improvement of data collection.
+          <h3>{this.translate(['header', 'reports'])}</h3>
+          <div className={'block with-image'}>
+            <div className={'subheader'}>{this.translate(['subheader', 'main_findings'])}</div>
+            <div className='text'>
+              <p>{this.translate(['block', 'main_findings', 'p1'])}</p>
+              <p>{this.translate(['block', 'main_findings', 'p2'])}</p>
+            </div>
           </div>
+          <Graphs/>
+          <a className={'download-button'} href={MainFindingsPdf} target='_blank' rel='noopener noreferrer'>
+            <DownloadIcon/>
+            {this.translate(['button', 'main_findings'])}
+          </a>
+          <div className={'block with-image'}>
+            <div className={'subheader'}>{this.translate(['subheader', 'methodology'])}</div>
+            <div className='text'>
+              {this.translate(['block', 'methodology'])}
+            </div>
+          </div>
+          <a className={'download-button'} href={MethodologyPdf} target='_blank' rel='noopener noreferrer'>
+            <DownloadIcon/>
+            {this.translate(['button', 'methodology'])}
+          </a>
+          <h3>{this.translate(['header', 'project'])}</h3>
+          <div className={'block'}>
+            {this.translate(['block', 'project'])} <a href="https://www.ipz.uzh.ch/en/studium/MA/capstones.html" target='_blank' rel='noopener noreferrer'>{this.translate(['block', 'here'])}</a>.
+          </div>
+          <h3>{this.translate(['header', 'team'])}</h3>
+          <div className={'block'}>
+            {this.translate(['block', 'team'])}
+          </div>
+          <Pictures/>
         </div>
-        <a className={'download-button'} href={MethodologyPdf} target='_blank' rel='noopener noreferrer'>
-          <Download/>
-          Download Methodology Report
-        </a>
-        <h3>The Project</h3>
-        <div className={'block'}>
-          "Analysing Human Trafficking - A Machine Learning Approach" is a joint project between the International Organization for Migration (IOM) and the University of Zurich (UZH). It aimed to create a typology of human trafficking cases . The project was carried out by Master students within a Capstone Course, offered by the University of Zurich. Capstone Courses are innovative teaching formats, which provide the students with the opportunity to develop their skills and apply them to practical problems. More information on Capstone Courses is available <a href="https://www.ipz.uzh.ch/en/studium/MA/capstones.html" target='_blank' rel='noopener noreferrer'>here</a>.
-        </div>
-        <h3>The Team</h3>
-        <div className={'block'}>
-          The team behind "Analysing Human Trafficking - A Machine Learning Approach" consists of five Master students at the University of Zurich: Janine Albiez, Patrik Aus der Au, Saro Gibilisco, Théoda Woeffray, and Jenny Yin. The project was realised under the supervision and with the valuable support of Prof. Dr. Marco Steenbergen and Dr. Judith Spirig.
-        </div>
-        <h3>Get in touch!</h3>
-        <div className={'block'}>
-          If you have questions or suggestions concerning our project, feel free to <a href={`mailto:theoda.woeffray@bluewin.ch`}>contact us</a>!
+        <div className={'footer'}>
+          <h3>{this.translate(['header', 'get_in_touch'])}</h3>
+          <div className={'block'}>
+            {this.translate(['block', 'get_in_touch'])}
+          </div>
+          <div className={'contact-icons'}>
+            <a className={'mail-link'} href={`mailto:theoda.woeffray@bluewin.ch`}><MailIcon/></a>
+            <a className={'github-link'} href={`https://github.com/rikmelis/capstone`} target='_blank' rel='noopener noreferrer'><GithubIcon/></a>
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
-
-export default App;
 
