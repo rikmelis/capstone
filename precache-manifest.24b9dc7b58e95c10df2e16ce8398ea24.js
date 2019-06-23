@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f68b28aeaede75a7fcbf698c45fcc9cd",
+    "revision": "f610198d866d59a3a7037e4065833ff6",
     "url": "/capstone/index.html"
   },
   {
-    "revision": "a615834b3de050b49f0b",
-    "url": "/capstone/static/css/main.448f419d.chunk.css"
+    "revision": "a3ce2658d5bcecef0125",
+    "url": "/capstone/static/css/main.e7e20002.chunk.css"
   },
   {
-    "revision": "b4efc7d68bb1614d75b7",
-    "url": "/capstone/static/js/2.b09459d5.chunk.js"
+    "revision": "5e6c23bf35549867e51f",
+    "url": "/capstone/static/js/2.6aff9072.chunk.js"
   },
   {
-    "revision": "a615834b3de050b49f0b",
-    "url": "/capstone/static/js/main.a5c99aa8.chunk.js"
+    "revision": "a3ce2658d5bcecef0125",
+    "url": "/capstone/static/js/main.67bcc9bc.chunk.js"
   },
   {
     "revision": "c9f29886e7c070c80285",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "295af695cc6b970131e2c739127c5091",
     "url": "/capstone/static/media/placeholder.295af695.png"
+  },
+  {
+    "revision": "0918bd2d04aef1784d7c39b0328a072c",
+    "url": "/capstone/static/media/saro.0918bd2d.jpeg"
   },
   {
     "revision": "9171991dd373858b3da67adf0dbc3241",
