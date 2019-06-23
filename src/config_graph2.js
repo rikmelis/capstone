@@ -5,11 +5,11 @@ const red = '#C2514F';
 const blue = '#1D487A';
 const orange = '#F9964F';
 
-const n1 = new Node('age', 270, 20);
-const n2 = new Node('economic status', 50, 200);
-const n3 = new Node('region of exploitation', 400, 200);
-const n4 = new Node('gender', 570, 400);
-const n5 = new Node('initial contact to recruiter', 350, 550);
+const n1 = new Node('age', 320, 50);
+const n2 = new Node('economic status', 150, 200);
+const n3 = new Node('region of exploitation', 500, 200);
+const n4 = new Node('gender', 650, 400);
+const n5 = new Node('initial contact to recruiter', 450, 530);
 n1.id = 1;
 n2.id = 2;
 n3.id = 3;
@@ -21,11 +21,11 @@ const roundNodesStyle = {
   borderRadius: '50%',
 }
 
-const n6 = new Node('FL', 20, 400, orange, '0.80 | 4%', roundNodesStyle);
+const n6 = new Node('FL', 50, 400, orange, '0.80 | 4%', roundNodesStyle);
 const n7 = new Node('FL', 250, 400, blue, '0.75 | 15%', roundNodesStyle);
 const n8 = new Node('FL', 350, 400, blue, '0.92 | 75%', roundNodesStyle);
-const n9 = new Node('FL', 710, 560, blue, '0.90 | 2%', roundNodesStyle);
-const n10 = new Node('FL', 300, 720, blue, '0.92 | <1%', roundNodesStyle);
+const n9 = new Node('FL', 740, 530, blue, '0.90 | 2%', roundNodesStyle);
+const n10 = new Node('FL', 270, 720, blue, '0.92 | <1%', roundNodesStyle);
 const n11 = new Node('SE', 600, 720, red, '0.89 | 3%', roundNodesStyle);
 
 export const nodes = [

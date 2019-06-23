@@ -7,6 +7,7 @@ export default class Graph extends React.Component {
 
     this.nodeRefs = [];
     this.edgeLabelRefs = [];
+    this.nodeLabelRefs = [];
   }
 
   highlightPath(node) {
@@ -27,6 +28,9 @@ export default class Graph extends React.Component {
     this.edgeLabelRefs.forEach((r, index) => {
       this.props.edges[index].edgeLabelHeight = r.getBoundingClientRect().height;
     });
+    this.nodeLabelRefs.forEach((r, index) => {
+      this.props.nodes[index].labelWidth = r.getBoundingClientRect().width;
+    });
     this.forceUpdate();
   }
 
@@ -36,10 +40,12 @@ export default class Graph extends React.Component {
       height,
       nodes,
       edges,
+      legend,
     } = this.props;
 
     return (
       <div className={'graph'} style={{width: `${width}px`, height: `${height}px`}}>
+        {legend && legend}
         {nodes.map((node, index) => 
           <div
             key={`node-${index}`}
@@ -51,7 +57,15 @@ export default class Graph extends React.Component {
             >
             {node.text}
             {node.id && <div className={'index'}>{node.id}</div>}
-            {node.label && <div className={'label'} style={node.getLabelStyle()}>{node.label}</div>}
+            {node.label && 
+              <div
+                className={'label'} 
+                ref={r => this.nodeLabelRefs[index] = r}
+                style={node.getLabelStyle()}
+                >
+                  {node.label}
+              </div>
+            }
           </div>
         )}
         <svg width={width} height={height}>

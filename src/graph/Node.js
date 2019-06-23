@@ -9,6 +9,7 @@ export default class Node {
     this.id = null;
     this.width = 0;
     this.height = 0;
+    this.labelWidth = 0;
     this.highlighted = false;
   }
 
@@ -32,8 +33,8 @@ export default class Node {
 
   getStyle() {
     return {
-      left: `${this.x}px`,
-      top: `${this.y}px`,
+      left: `${this.x - this.width / 2}px`,
+      top: `${this.y - this.height / 2}px`,
       opacity: this.highlighted ? 1.0 : 0.4,
       backgroundColor: this.getColor(),
       ...this.style,
@@ -44,6 +45,8 @@ export default class Node {
     return {
       opacity: this.highlighted ? 1.0 : 0.4,
       color: this.getColor(),
+      top: `${this.height + 5}px`,
+      left: `${(this.width - this.labelWidth) / 2}px`,
     }
   }
 }

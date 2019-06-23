@@ -13,7 +13,7 @@ export default class Pictures extends React.Component {
 		 	},
 		 	{
 		 		name: 'Saro Gibilisco',
-		 		picture: require('./pictures/placeholder.png'),
+		 		picture: require('./pictures/saro.jpeg'),
 		 	},
 		 	{
 		 		name: 'Théoda Woeffray',
@@ -30,7 +30,7 @@ export default class Pictures extends React.Component {
         {team.map(person =>
         	<div className={'picture'} key={person.name}>
 	          <div className={'text'}>{person.name}</div>
-	          <img src={person.picture}/>
+	          <img src={person.picture} alt={''}/>
 	          <div className={'background-layer'}/>
 	        </div>
 	      )}

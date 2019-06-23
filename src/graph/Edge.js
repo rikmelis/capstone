@@ -14,19 +14,19 @@ export default class Edge {
   }
 
   getX1() {
-    return this.from.x + this.from.width / 2 - 10 + (this.isLeftEdge() ? 0 : 20);
+    return this.from.x - 10 + (this.isLeftEdge() ? 0 : 20);
   }
 
   getY1() {
-    return this.from.y + this.from.height + 5;
+    return this.from.y + this.from.height / 2 + 5;
   }
 
   getX2() {
-    return this.isLeftEdge() ? this.to.x + this.to.width + 20 : this.to.x - 20;
+    return this.isLeftEdge() ? this.to.x + this.to.width / 2 + 20 : this.to.x - this.to.width / 2 - 20;
   }
 
   getY2() {
-    return this.to.y + this.to.height / 2;
+    return this.to.y;
   }
 
   getStyle() {

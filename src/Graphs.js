@@ -10,15 +10,55 @@ export default class Graphs extends React.Component {
     super(props);
 
     this.state = {
-      selectedGraph: 2,
+      selectedGraph: 0,
     };
   }
 
   render() {
+    const legend1 = (
+      <div className={'legend'}>
+        <table className={'legend'}>
+          <tr>
+            <td>FL</td>
+            <td>forced labour in country of citizenship</td>
+          </tr>
+          <tr>
+            <td>FL</td>
+            <td>forced labour in foreign country</td>
+          </tr>
+          <tr>
+            <td>SE</td>
+            <td>secual exploitation in foreign country</td>
+          </tr>
+          <tr>
+            <td><b>P</b></td>
+            <td>Pacific</td>
+          </tr>
+          <tr>
+            <td><b>MENA</b></td>
+            <td>Middle East & North Africa</td>
+          </tr>
+          <tr>
+            <td><b>SEE</b></td>
+            <td>South Eastern Europe</td>
+          </tr>
+          <tr>
+            <td><b>EU</b></td>
+            <td>European Union</td>
+          </tr>
+          <tr>
+            <td><b>EEA</b></td>
+            <td>European Economic Area</td>
+          </tr>
+        </table>
+        * age at entry into process
+      </div>
+    );
+
     const graphs = [
     	{
     		title: 'SEE & Central Asia',
-    		graph: <Graph key={'graph1'} width={800} height={750} nodes={nodes1} edges={edges1}/>,
+    		graph: <Graph key={'graph1'} width={800} height={620} nodes={nodes1} edges={edges1}/>,
     	},
     	{
     		title: 'Asia & The Pacific',
@@ -26,7 +66,7 @@ export default class Graphs extends React.Component {
     	},
     	{
     		title: 'West & Central Africa',
-    		graph: <Graph key={'graph3'} width={800} height={500} nodes={nodes3} edges={edges3}/>,
+    		graph: <Graph key={'graph3'} width={800} height={480} nodes={nodes3} edges={edges3}/>,
     	},
     ];
 

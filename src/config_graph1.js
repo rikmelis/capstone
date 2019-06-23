@@ -4,10 +4,10 @@ import Edge from './graph/Edge.js';
 const red = '#C2514F';
 const blue = '#1D487A';
 
-const genderNode = new Node('gender', 100, 20);
-const maritalStatusNode = new Node('marital status', 300, 250);
-const recruitmentNode = new Node('recruitment', 100, 500);
-const activityNode = new Node('believed activity', 480, 500);
+const genderNode = new Node('gender', 180, 50);
+const maritalStatusNode = new Node('marital status', 370, 200);
+const recruitmentNode = new Node('recruitment', 180, 400);
+const activityNode = new Node('believed activity', 580, 400);
 genderNode.id = 1;
 maritalStatusNode.id = 2;
 recruitmentNode.id = 3;
@@ -18,11 +18,11 @@ const roundNodesStyle = {
   borderRadius: '50%',
 }
 
-const genderFLNode = new Node('FL', 30, 250, blue, '0.98 | 35%', roundNodesStyle);
-const recruitmentFLNode = new Node('FL', 50, 650, blue, '0.73 | 14%', roundNodesStyle);
-const recruitmentSENode = new Node('SE', 300, 650, red, '0.80 | 2%', roundNodesStyle);
-const activityFLNode = new Node('FL', 450, 650, blue, '0.89 | 2%', roundNodesStyle);
-const activitySENode = new Node('SE', 700, 650, red, '0.81 | 48%', roundNodesStyle);
+const genderFLNode = new Node('FL', 60, 200, blue, '0.98 | 35%', roundNodesStyle);
+const recruitmentFLNode = new Node('FL', 60, 550, blue, '0.73 | 14%', roundNodesStyle);
+const recruitmentSENode = new Node('SE', 300, 550, red, '0.80 | 2%', roundNodesStyle);
+const activityFLNode = new Node('FL', 450, 550, blue, '0.89 | 2%', roundNodesStyle);
+const activitySENode = new Node('SE', 700, 550, red, '0.81 | 48%', roundNodesStyle);
 
 export const nodes = [
   genderNode,
