@@ -37,8 +37,10 @@ export default class App extends React.Component {
           {this.state.language === 'en' ? 'Deutsch' : 'English'}
         </div>
         <div className='title'>
-          <div>{this.translate('page_title')}</div>
-          <div className={'subtitle'}>{this.translate('subtitle')}</div>
+          <div className={'block-container'}>
+            <div>{this.translate('page_title')}</div>
+            <div className={'subtitle'}>{this.translate('subtitle')}</div>
+          </div>
         </div>
         <div className={'page'}>
           <div className={'intro'}>
@@ -48,9 +50,11 @@ export default class App extends React.Component {
           <h3>{this.translate(['header', 'reports'])}</h3>
           <div className={'block with-image'}>
             <div className={'subheader'}>{this.translate(['subheader', 'main_findings'])}</div>
-            <div className='text'>
-              <p>{this.translate(['block', 'main_findings', 'p1'])}</p>
-              <p>{this.translate(['block', 'main_findings', 'p2'])}</p>
+            <div className='paragraph'>
+              {this.translate(['block', 'main_findings', 'p1'])}
+            </div>
+            <div className='paragraph'>
+              {this.translate(['block', 'main_findings', 'p2'])}
             </div>
           </div>
           <Graphs/>
@@ -79,13 +83,15 @@ export default class App extends React.Component {
           <Pictures/>
         </div>
         <div className={'footer'}>
-          <h3>{this.translate(['header', 'get_in_touch'])}</h3>
-          <div className={'block'}>
-            {this.translate(['block', 'get_in_touch'])}
-          </div>
-          <div className={'contact-icons'}>
-            <a className={'mail-link'} href={`mailto:theoda.woeffray@bluewin.ch`}><MailIcon/></a>
-            <a className={'github-link'} href={`https://github.com/rikmelis/capstone`} target='_blank' rel='noopener noreferrer'><GithubIcon/></a>
+          <div className={'block-container'}>
+            <h3>{this.translate(['header', 'get_in_touch'])}</h3>
+            <div className={'block'}>
+              {this.translate(['block', 'get_in_touch'])}
+            </div>
+            <div className={'contact-icons'}>
+              <a className={'mail-link'} href={`mailto:theoda.woeffray@bluewin.ch`}><MailIcon/></a>
+              <a className={'github-link'} href={`https://github.com/rikmelis/capstone`} target='_blank' rel='noopener noreferrer'><GithubIcon/></a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,4 @@
-import Node from './graph/Node.js';
-import Edge from './graph/Edge.js';
+import {Node, Edge} from 'test-graph';
 
 const red = '#C2514F';
 const blue = '#1D487A';
@@ -7,11 +6,12 @@ const blue = '#1D487A';
 const genderNode = new Node('gender', 180, 50);
 const maritalStatusNode = new Node('marital status', 370, 200);
 const recruitmentNode = new Node('recruitment', 180, 400);
-const activityNode = new Node('believed activity', 580, 400);
+const activityNode = new Node('believed activity: factory work', 580, 400);
 genderNode.id = 1;
 maritalStatusNode.id = 2;
 recruitmentNode.id = 3;
 activityNode.id = 4;
+// activityNode.style = {maxWidth: '165px'};
 
 const roundNodesStyle = {
   padding: '15px',

@@ -1,5 +1,4 @@
-import Node from './graph/Node.js';
-import Edge from './graph/Edge.js';
+import {Node, Edge} from 'test-graph';
 
 const red = '#C2514F';
 const blue = '#1D487A';
@@ -43,11 +42,11 @@ export const nodes = [
 ];
 
 const e1 = new Edge(n1, n2, blue, '< 38');
-const e2 = new Edge(n1, n3, blue, '> 38');
+const e2 = new Edge(n1, n3, blue, '≥ 38');
 const e3 = new Edge(n2, n6, orange, 'very poor');
 const e4 = new Edge(n2, n7, blue, 'poor / standard / well-off');
 const e5 = new Edge(n3, n8, blue, 'Asia & P / North & Central America / America / East Africa / MENA / SEE & Central Asia');
-const e6 = new Edge(n3, n4, red, 'EU & EEFA / Soutern Africa / West & Central Africa');
+const e6 = new Edge(n3, n4, red, 'EU & EEA / Soutern Africa / West & Central Africa');
 const e7 = new Edge(n4, n5, red, 'female');
 const e8 = new Edge(n4, n9, blue, 'male');
 const e9 = new Edge(n5, n10, blue, 'employment agency / internet advertisement / other');

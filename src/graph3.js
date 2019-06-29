@@ -1,12 +1,11 @@
-import Node from './graph/Node.js';
-import Edge from './graph/Edge.js';
+import {Node, Edge} from 'test-graph';
 
 const red = '#C2514F';
 const blue = '#1D487A';
 const orange = '#F9964F';
 
 const n1 = new Node('region of exploitation', 400, 60);
-const n2 = new Node('initial contact of recruiter', 200, 230);
+const n2 = new Node('initial contact to recruiter', 200, 230);
 const n3 = new Node('region of exploitation', 600, 230);
 n1.id = 1;
 n2.id = 2;

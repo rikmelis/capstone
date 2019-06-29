@@ -9,7 +9,7 @@ export default class Pictures extends React.Component {
 		 	},
 		 	{
 		 		name: 'Patrik Aus der Au',
-		 		picture: require('./pictures/placeholder.png'),
+		 		picture: require('./pictures/patrik.jpeg'),
 		 	},
 		 	{
 		 		name: 'Saro Gibilisco',
