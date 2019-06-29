@@ -185,6 +185,7 @@ h3 {
 }
 
 .graphs {
+  background-color: #f1f1f1;
   border: 1px solid #c0c3c3;
   margin-top: 30px;
   margin-bottom: 10px;
@@ -210,24 +211,55 @@ h3 {
 
   .explanation-container {
     border-top: 1px solid #c0c3c3;
-    background-color: #f1f1f1;
 
     .show-explanation-button {
       cursor: pointer;
-      padding: 2px 30px;
+      padding: 5px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-
-      .expand-icon {
-        width: 30px;
-        color: #404141;
-      }
     }
 
     .explanation {
       padding: 10px 30px 20px 30px;
       text-align: justify;
     }
+  }
+}
+
+.expand-icon {
+  width: 30px;
+  color: #404141;
+}
+
+.legend {
+  position: absolute;
+  border: 1px solid #c0c3c3;
+  background-color: white;
+  font-size: 14px;
+
+  .show-legend-button {
+    font-size: 18px;
+    padding: 0 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+    padding: 8px;
+    border-top: 1px solid #c0c3c3;
+  }
+
+  .circle {
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+  }
+
+  td {
+    padding: 2px;
   }
 }
