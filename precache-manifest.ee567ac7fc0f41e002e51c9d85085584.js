@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5e99999a96a9ce177d9ad8cc2e502cbd",
+    "revision": "14e6056325cb6e2762214f6469d738c1",
     "url": "/capstone/index.html"
   },
   {
-    "revision": "8e285e43a9dfb5479675",
-    "url": "/capstone/static/css/main.c217a3b6.chunk.css"
+    "revision": "6acef7fb3f19d3e9d866",
+    "url": "/capstone/static/css/main.1ccbb801.chunk.css"
   },
   {
-    "revision": "b700af1aadba8ab53a71",
-    "url": "/capstone/static/js/2.998eebe9.chunk.js"
+    "revision": "369ee852cf4a537d3324",
+    "url": "/capstone/static/js/2.73e49c1f.chunk.js"
   },
   {
-    "revision": "8e285e43a9dfb5479675",
-    "url": "/capstone/static/js/main.6c3745f1.chunk.js"
+    "revision": "6acef7fb3f19d3e9d866",
+    "url": "/capstone/static/js/main.2b211093.chunk.js"
   },
   {
     "revision": "c9f29886e7c070c80285",
     "url": "/capstone/static/js/runtime~main.0628282e.js"
+  },
+  {
+    "revision": "d60178bf503e82ba603621218043d15b",
+    "url": "/capstone/static/media/janine.d60178bf.jpeg"
   },
   {
     "revision": "0f1f546eb82a8e7009cee2e43d32eacf",
