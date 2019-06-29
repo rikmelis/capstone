@@ -11,7 +11,7 @@ genderNode.id = 1;
 maritalStatusNode.id = 2;
 recruitmentNode.id = 3;
 activityNode.id = 4;
-// activityNode.style = {maxWidth: '165px'};
+activityNode.style = {width: '170px', maxWidth: '170px'};
 
 const roundNodesStyle = {
   padding: '15px',

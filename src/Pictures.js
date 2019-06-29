@@ -5,7 +5,7 @@ export default class Pictures extends React.Component {
 		const team = [
 		 	{
 		 		name: 'Janine Albiez',
-		 		picture: require('./pictures/placeholder.png'),
+		 		picture: require('./pictures/janine.jpeg'),
 		 	},
 		 	{
 		 		name: 'Patrik Aus der Au',
