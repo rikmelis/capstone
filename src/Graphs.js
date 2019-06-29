@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 import {Graph} from 'test-graph';
-import graph1 from './graph1.js';
-import graph2 from './graph2.js';
-import graph3 from './graph3.js';
+import graph1 from './graph1';
+import graph2 from './graph2';
+import graph3 from './graph3';
 import {ExpandMore, ExpandLess} from 'styled-icons/material';
 
 

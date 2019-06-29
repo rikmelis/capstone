@@ -1,7 +1,7 @@
 import React from 'react';
 import {Node, Edge} from 'test-graph';
-import {red, blue, orange} from './graph_colors.js';
-import Legend from './Legend.js';
+import {red, blue, orange} from './graph_colors';
+import Legend from './Legend';
 
 const n1 = new Node('region of exploitation', 350, 60);
 const n2 = new Node('initial contact to recruiter', 150, 250);

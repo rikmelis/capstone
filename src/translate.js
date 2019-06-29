@@ -1,10 +1,16 @@
+import React, {useContext} from 'react';
+import {Context} from './store';
+
 const translations = {
 	en: require('./en.json'),
 	de: require('./de.json'),
 };
 
-export const translate = (language, key) => {
-	const path = typeof(key) === 'string' ? [key] : key;
+function Translation(props) {
+  const {language} = useContext(Context);
+	const {translationKey} = props;
+
+	const path = typeof(translationKey) === 'string' ? [translationKey] : translationKey;
 
 	let t = translations[language];
 	try {
@@ -18,4 +24,8 @@ export const translate = (language, key) => {
 		return 'missing translation';
 	}
 	return t;
+}
+
+export default (translationKey) => {
+	return <Translation translationKey={translationKey}/>;
 }

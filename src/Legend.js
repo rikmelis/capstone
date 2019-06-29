@@ -1,19 +1,13 @@
 import React from 'react';
 import {ExpandMore, ExpandLess} from 'styled-icons/material';
+import {Context} from './store';
 
 export default class Legend extends React.Component {
-	constructor(props) {
-		super(props);
-
-		this.state = {
-			showLegend: true,
-		};
-	}
-
 	render() {
 		const {
 			showLegend,
-		} = this.state;
+			toggleShowLegend,
+		} = this.context;
 
 		const {
 			style,
@@ -22,7 +16,7 @@ export default class Legend extends React.Component {
 
 		return (
 		  <div className={'legend'} style={style}>
-		    <div className={'show-legend-button'} onClick={() => this.setState({showLegend: !showLegend})}>
+		    <div className={'show-legend-button'} onClick={toggleShowLegend}>
 		      {'legend'}
 					<div className={'expand-icon'}>{showLegend ? <ExpandMore/> : <ExpandLess/>}</div>
 		    </div>
@@ -31,3 +25,5 @@ export default class Legend extends React.Component {
 		);
 	}
 }
+
+Legend.contextType = Context;

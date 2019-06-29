@@ -1,7 +1,7 @@
 import React from 'react';
 import {Node, Edge} from 'test-graph';
-import {red, blue, orange} from './graph_colors.js';
-import Legend from './Legend.js';
+import {red, blue, orange} from './graph_colors';
+import Legend from './Legend';
 
 const n1 = new Node('age*', 320, 50);
 const n2 = new Node('economic status', 150, 200);

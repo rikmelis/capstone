@@ -4,89 +4,71 @@ import {MailOutline as MailIcon} from 'styled-icons/material';
 import {Github as GithubIcon} from 'styled-icons/boxicons-logos';
 import MainFindingsPdf from './main-findings.pdf';
 import MethodologyPdf from './methodology.pdf';
-import Pictures from './Pictures.js';
-import Graphs from './Graphs.js';
-import {translate} from './translate.js';
+import Pictures from './Pictures';
+import Graphs from './Graphs';
+import translate from './translate';
+import {Context} from './store';
 import './App.scss';
 
 export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      language: 'en',
-    };
-  }
-
-  translate(key) {
-    return translate(this.state.language, key);
-  }
-
-  changeLanguage(event) {
-    event.preventDefault();
-    event.stopPropagation();
-    this.setState({
-      language: this.state.language === 'en' ? 'de' : 'en',
-    });
-  }
-
   render() {
+    const {language, toggleLanguage} = this.context;
     return (
       <div className={'container'}>
-        <div className={'language-selector'} onClick={(event) => this.changeLanguage(event)}>
-          {this.state.language === 'en' ? 'Deutsch' : 'English'}
+        <div className={'language-selector'} onClick={toggleLanguage}>
+          {language === 'en' ? 'Deutsch' : 'English'}
         </div>
         <div className='title'>
           <div className={'block-container'}>
-            <div>{this.translate('page_title')}</div>
-            <div className={'subtitle'}>{this.translate('subtitle')}</div>
+            <div>{translate('page_title')}</div>
+            <div className={'subtitle'}>{translate('subtitle')}</div>
           </div>
         </div>
         <div className={'page'}>
           <div className={'intro'}>
-            <p>{this.translate(['introduction', 'p1'])}</p>
-            <p>{this.translate(['introduction', 'p2'])}</p>
+            <p>{translate(['introduction', 'p1'])}</p>
+            <p>{translate(['introduction', 'p2'])}</p>
           </div>
-          <h3>{this.translate(['header', 'reports'])}</h3>
+          <h3>{translate(['header', 'reports'])}</h3>
           <div className={'block with-image'}>
-            <div className={'subheader'}>{this.translate(['subheader', 'main_findings'])}</div>
+            <div className={'subheader'}>{translate(['subheader', 'main_findings'])}</div>
             <div className='paragraph'>
-              {this.translate(['block', 'main_findings', 'p1'])}
+              {translate(['block', 'main_findings', 'p1'])}
             </div>
             <div className='paragraph'>
-              {this.translate(['block', 'main_findings', 'p2'])}
+              {translate(['block', 'main_findings', 'p2'])}
             </div>
           </div>
           <Graphs/>
           <a className={'download-button'} href={MainFindingsPdf} target='_blank' rel='noopener noreferrer'>
             <DownloadIcon/>
-            {this.translate(['button', 'main_findings'])}
+            {translate(['button', 'main_findings'])}
           </a>
           <div className={'block with-image'}>
-            <div className={'subheader'}>{this.translate(['subheader', 'methodology'])}</div>
+            <div className={'subheader'}>{translate(['subheader', 'methodology'])}</div>
             <div className='text'>
-              {this.translate(['block', 'methodology'])}
+              {translate(['block', 'methodology'])}
             </div>
           </div>
           <a className={'download-button'} href={MethodologyPdf} target='_blank' rel='noopener noreferrer'>
             <DownloadIcon/>
-            {this.translate(['button', 'methodology'])}
+            {translate(['button', 'methodology'])}
           </a>
-          <h3>{this.translate(['header', 'project'])}</h3>
+          <h3>{translate(['header', 'project'])}</h3>
           <div className={'block'}>
-            {this.translate(['block', 'project'])} <a href="https://www.ipz.uzh.ch/en/studium/MA/capstones.html" target='_blank' rel='noopener noreferrer'>{this.translate(['block', 'here'])}</a>.
+            {translate(['block', 'project'])} <a href="https://www.ipz.uzh.ch/en/studium/MA/capstones.html" target='_blank' rel='noopener noreferrer'>{translate(['block', 'here'])}</a>.
           </div>
-          <h3>{this.translate(['header', 'team'])}</h3>
+          <h3>{translate(['header', 'team'])}</h3>
           <div className={'block'}>
-            {this.translate(['block', 'team'])}
+            {translate(['block', 'team'])}
           </div>
           <Pictures/>
         </div>
         <div className={'footer'}>
           <div className={'block-container'}>
-            <h3>{this.translate(['header', 'get_in_touch'])}</h3>
+            <h3>{translate(['header', 'get_in_touch'])}</h3>
             <div className={'block'}>
-              {this.translate(['block', 'get_in_touch'])}
+              {translate(['block', 'get_in_touch'])}
             </div>
             <div className={'contact-icons'}>
               <a className={'mail-link'} href={`mailto:theoda.woeffray@bluewin.ch`}><MailIcon/></a>
@@ -99,3 +81,4 @@ export default class App extends React.Component {
   }
 }
 
+App.contextType = Context;
