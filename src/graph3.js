@@ -1,5 +1,5 @@
 import React from 'react';
-import {Node, Edge} from 'test-graph';
+import {Node, Edge} from 'react-graph-flow';
 import {red, blue, orange} from './graph_colors';
 import Legend from './Legend';
 import translate from './translate';

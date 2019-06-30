@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import {Graph} from 'test-graph';
+import {Graph} from 'react-graph-flow';
 import graph1 from './graph1';
 import graph2 from './graph2';
 import graph3 from './graph3';
