@@ -2,12 +2,15 @@ import React from 'react';
 import {Node, Edge} from 'test-graph';
 import {red, blue, orange} from './graph_colors';
 import Legend from './Legend';
+import translate from './translate';
 
-const n1 = new Node('age*', 320, 50);
-const n2 = new Node('economic status', 150, 200);
-const n3 = new Node('region of exploitation', 500, 200);
-const n4 = new Node('gender', 660, 400);
-const n5 = new Node('initial contact to recruiter', 500, 550);
+const t = k => translate(['graph2', k])
+
+const n1 = new Node(t('age'), 320, 50);
+const n2 = new Node(t('economic_status'), 150, 200);
+const n3 = new Node(t('region_of_exploitation'), 500, 200);
+const n4 = new Node(t('gender'), 660, 400);
+const n5 = new Node(t('initial_contact'), 500, 550);
 n1.id = 1;
 n2.id = 2;
 n3.id = 3;
@@ -19,12 +22,12 @@ const roundNodesStyle = {
   borderRadius: '50%',
 }
 
-const n6 = new Node('FL', 50, 400, orange, '0.80 | 4%', roundNodesStyle);
-const n7 = new Node('FL', 250, 400, blue, '0.75 | 15%', roundNodesStyle);
-const n8 = new Node('FL', 350, 400, blue, '0.92 | 75%', roundNodesStyle);
-const n9 = new Node('FL', 745, 550, blue, '0.90 | 2%', roundNodesStyle);
-const n10 = new Node('FL', 350, 740, blue, '0.92 | <1%', roundNodesStyle);
-const n11 = new Node('SE', 650, 740, red, '0.89 | 3%', roundNodesStyle);
+const n6 = new Node(t('FL'), 50, 400, orange, '0.80 | 4%', roundNodesStyle);
+const n7 = new Node(t('FL'), 250, 400, blue, '0.75 | 15%', roundNodesStyle);
+const n8 = new Node(t('FL'), 350, 400, blue, '0.92 | 75%', roundNodesStyle);
+const n9 = new Node(t('FL'), 745, 550, blue, '0.90 | 2%', roundNodesStyle);
+const n10 = new Node(t('FL'), 350, 740, blue, '0.92 | <1%', roundNodesStyle);
+const n11 = new Node(t('SE'), 650, 740, red, '0.89 | 3%', roundNodesStyle);
 
 const nodes = [
   n1,
@@ -40,16 +43,16 @@ const nodes = [
   n11,
 ];
 
-const e1 = new Edge(n1, n2, blue, '< 38');
-const e2 = new Edge(n1, n3, blue, '≥ 38');
-const e3 = new Edge(n2, n6, orange, 'very poor');
-const e4 = new Edge(n2, n7, blue, 'poor / standard / well-off');
-const e5 = new Edge(n3, n8, blue, 'Asia & P / North & Central America / America / East Africa / MENA / SEE & Central Asia');
-const e6 = new Edge(n3, n4, red, 'EU & EEA / Soutern Africa / West & Central Africa');
-const e7 = new Edge(n4, n5, red, 'female');
-const e8 = new Edge(n4, n9, blue, 'male');
-const e9 = new Edge(n5, n10, blue, 'employment agency / internet advertisement / other');
-const e10 = new Edge(n5, n11, red, 'personal contact');
+const e1 = new Edge(n1, n2, blue, t('less_than_38'));
+const e2 = new Edge(n1, n3, blue, t('more_than_38'));
+const e3 = new Edge(n2, n6, orange, t('very_poor'));
+const e4 = new Edge(n2, n7, blue, t('poor_standard'));
+const e5 = new Edge(n3, n8, blue, t('asia_p'));
+const e6 = new Edge(n3, n4, red, t('eu_eea'));
+const e7 = new Edge(n4, n5, red, t('female'));
+const e8 = new Edge(n4, n9, blue, t('male'));
+const e9 = new Edge(n5, n10, blue, t('employment_agency'));
+const e10 = new Edge(n5, n11, red, t('personal_contact'));
 
 const edges = [
   e1,
@@ -64,59 +67,57 @@ const edges = [
   e10,
 ];
 
-const explanation = 'Varius quam quisque id diam vel quam elementum pulvinar. Ultrices dui sapien eget mi proin sed libero enim. Ante metus dictum at tempor. Blandit massa enim nec dui nunc mattis enim. Libero nunc consequat interdum varius sit. Urna neque viverra justo nec ultrices dui sapien eget. Sodales ut etiam sit amet nisl purus in mollis. Orci dapibus ultrices in iaculis. Quis enim lobortis scelerisque fermentum. Platea dictumst quisque sagittis purus sit.';
-
 const legend = (
   <Legend style={{maxWidth: '250px', left: '5px', bottom: '5px'}}>
     <div className={'content'}>
       <table>
         <tbody>
           <tr>
-            <td><div className={'circle'} style={{backgroundColor: orange}}>FL</div></td>
-            <td>forced labour in country of citizenship</td>
+            <td><div className={'circle'} style={{backgroundColor: orange}}>{t('FL')}</div></td>
+            <td>{t('forced_labour_in_country_of_citizenship')}</td>
           </tr>
           <tr>
-            <td><div className={'circle'} style={{backgroundColor: blue}}>FL</div></td>
-            <td>forced labour in foreign country</td>
+            <td><div className={'circle'} style={{backgroundColor: blue}}>{t('FL')}</div></td>
+            <td>{t('forced_labour_in_foreign_country')}</td>
           </tr>
           <tr>
-            <td><div className={'circle'} style={{backgroundColor: red}}>SE</div></td>
-            <td>sexual exploitation in foreign country</td>
+            <td><div className={'circle'} style={{backgroundColor: red}}>{t('SE')}</div></td>
+            <td>{t('sexual_exploitation')}</td>
           </tr>
           <tr>
-            <td><b>P</b></td>
-            <td>Pacific</td>
+            <td><b>{t('P')}</b></td>
+            <td>{t('pacific')}</td>
           </tr>
           <tr>
-            <td><b>MENA</b></td>
-            <td>Middle East & North Africa</td>
+            <td><b>{t('MENA')}</b></td>
+            <td>{t('middle_east_and_north_africa')}</td>
           </tr>
           <tr>
-            <td><b>SEE</b></td>
-            <td>South Eastern Europe</td>
+            <td><b>{t('SEE')}</b></td>
+            <td>{t('south_eastern_europe')}</td>
           </tr>
           <tr>
-            <td><b>EU</b></td>
-            <td>European Union</td>
+            <td><b>{t('EU')}</b></td>
+            <td>{t('european_union')}</td>
           </tr>
           <tr>
-            <td><b>EEA</b></td>
-            <td>European Economic Area</td>
+            <td><b>{t('EEA')}</b></td>
+            <td>{t('european_economic_area')}</td>
           </tr>
         </tbody>
       </table>
-      * age at entry into process
+      {t('age_at_entry')}
     </div>
   </Legend>
 );
 
 export default {
-  title: 'Asia & The Pacific',
+  title: t('asia_and_the_pacific'),
   key: 'graph2',
   nodes: nodes,
   edges: edges,
   width: 800,
   height: 800,
-  explanation: explanation,
+  explanation: t('explanation'),
   legend: legend,
 }

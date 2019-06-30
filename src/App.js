@@ -39,7 +39,7 @@ export default class App extends React.Component {
               {translate(['block', 'main_findings', 'p2'])}
             </div>
           </div>
-          <Graphs/>
+          <Graphs key={`language-${language}`}/>
           <a className={'download-button'} href={MainFindingsPdf} target='_blank' rel='noopener noreferrer'>
             <DownloadIcon/>
             {translate(['button', 'main_findings'])}

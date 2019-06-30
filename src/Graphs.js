@@ -5,7 +5,7 @@ import graph1 from './graph1';
 import graph2 from './graph2';
 import graph3 from './graph3';
 import {ExpandMore, ExpandLess} from 'styled-icons/material';
-
+import translate from './translate';
 
 export default class Graphs extends React.Component {
   constructor(props) {
@@ -52,7 +52,7 @@ export default class Graphs extends React.Component {
         <Graph key={key} nodes={nodes} edges={edges} width={width} height={height}>{legend}</Graph>
         <div className={'explanation-container'}>
           <div className={'show-explanation-button'} onClick={() => this.setState({showExplanation: !showExplanation})}>
-            {'What does this mean?'}
+            {translate('what_does_this_mean')}
             <div className={'expand-icon'}>{showExplanation ? <ExpandMore/> : <ExpandLess/>}</div>
           </div>
           {showExplanation && <div className={'explanation'}>{explanation}</div>}
