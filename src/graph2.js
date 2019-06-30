@@ -68,7 +68,7 @@ const edges = [
 ];
 
 const legend = (
-  <Legend style={{maxWidth: '250px', left: '5px', bottom: '5px'}}>
+  <Legend style={{left: '5px', bottom: '5px'}}>
     <div className={'content'}>
       <table>
         <tbody>

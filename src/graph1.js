@@ -14,7 +14,6 @@ genderNode.id = 1;
 maritalStatusNode.id = 2;
 recruitmentNode.id = 3;
 activityNode.id = 4;
-activityNode.style = {width: '190px', maxWidth: '190px'};
 
 const roundNodesStyle = {
   padding: '15px',
@@ -60,7 +59,7 @@ const edges = [
 ];
 
 const legend = (
-  <Legend style={{maxWidth: '360px', right: '5px', top: '5px'}}>
+  <Legend style={{right: '5px', top: '5px'}}>
     <div className={'content'}>
       <table>
           <tbody>
