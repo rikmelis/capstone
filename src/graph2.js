@@ -9,7 +9,7 @@ const t = k => translate(['graph2', k])
 const n1 = new Node(t('age'), 320, 50);
 const n2 = new Node(t('economic_status'), 130, 200);
 const n3 = new Node(t('region_of_exploitation'), 530, 200);
-const n4 = new Node(t('gender'), 660, 400);
+const n4 = new Node(t('gender'), 665, 400);
 const n5 = new Node(t('initial_contact'), 500, 550);
 n1.id = 1;
 n2.id = 2;
