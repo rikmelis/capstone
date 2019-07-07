@@ -7,8 +7,8 @@ import translate from './translate';
 const t = k => translate(['graph2', k])
 
 const n1 = new Node(t('age'), 320, 50);
-const n2 = new Node(t('economic_status'), 150, 200);
-const n3 = new Node(t('region_of_exploitation'), 500, 200);
+const n2 = new Node(t('economic_status'), 130, 200);
+const n3 = new Node(t('region_of_exploitation'), 530, 200);
 const n4 = new Node(t('gender'), 660, 400);
 const n5 = new Node(t('initial_contact'), 500, 550);
 n1.id = 1;
@@ -23,8 +23,8 @@ const roundNodesStyle = {
 }
 
 const n6 = new Node(t('FL'), 50, 400, orange, '0.80 | 4%', roundNodesStyle);
-const n7 = new Node(t('FL'), 250, 400, blue, '0.75 | 15%', roundNodesStyle);
-const n8 = new Node(t('FL'), 350, 400, blue, '0.92 | 75%', roundNodesStyle);
+const n7 = new Node(t('FL'), 230, 400, blue, '0.75 | 15%', roundNodesStyle);
+const n8 = new Node(t('FL'), 400, 400, blue, '0.92 | 75%', roundNodesStyle);
 const n9 = new Node(t('FL'), 745, 550, blue, '0.90 | 2%', roundNodesStyle);
 const n10 = new Node(t('FL'), 350, 740, blue, '0.92 | <1%', roundNodesStyle);
 const n11 = new Node(t('SE'), 650, 740, red, '0.89 | 3%', roundNodesStyle);

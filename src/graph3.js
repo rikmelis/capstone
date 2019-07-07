@@ -6,9 +6,9 @@ import translate from './translate';
 
 const t = k => translate(['graph3', k])
 
-const n1 = new Node(t('region_of_exploitation'), 350, 60);
-const n2 = new Node(t('initial_contact'), 150, 250);
-const n3 = new Node(t('region_of_exploitation'), 550, 250);
+const n1 = new Node(t('region_of_exploitation'), 380, 60);
+const n2 = new Node(t('initial_contact'), 180, 280);
+const n3 = new Node(t('region_of_exploitation'), 600, 280);
 n1.id = 1;
 n2.id = 2;
 n3.id = 3;
@@ -18,10 +18,10 @@ const roundNodesStyle = {
   borderRadius: '50%',
 }
 
-const n4 = new Node(t('FL'), 50, 420, orange, '0.98 | 58%', roundNodesStyle);
-const n5 = new Node(t('FL'), 250, 420, blue, '0.62 | 9%', roundNodesStyle);
-const n6 = new Node(t('FL'), 450, 420, blue, '0.94 | 6%', roundNodesStyle);
-const n7 = new Node(t('SE'), 650, 420, red, '0.83 | 27%', roundNodesStyle);
+const n4 = new Node(t('FL'), 80, 450, orange, '0.98 | 58%', roundNodesStyle);
+const n5 = new Node(t('FL'), 280, 450, blue, '0.62 | 9%', roundNodesStyle);
+const n6 = new Node(t('FL'), 480, 450, blue, '0.94 | 6%', roundNodesStyle);
+const n7 = new Node(t('SE'), 700, 450, red, '0.83 | 27%', roundNodesStyle);
 
 const nodes = [
   n1,
@@ -78,7 +78,7 @@ export default {
   nodes: nodes,
   edges: edges,
   width: 800,
-  height: 480,
+  height: 510,
   explanation: t('explanation'),
   legend: legend,
 };
