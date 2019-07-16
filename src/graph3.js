@@ -1,22 +1,22 @@
 import React from 'react';
-import {Node, Edge} from 'react-graph-flow';
+import {Node, Edge, Graph} from 'react-graph-flow';
 import {red, blue, orange} from './graph_colors';
 import Legend from './Legend';
 import translate from './translate';
 
-const t = k => translate(['graph3', k])
+const t = k => translate(['graph3', k]);
 
 const n1 = new Node(t('region_of_exploitation'), 380, 60);
 const n2 = new Node(t('initial_contact'), 180, 280);
 const n3 = new Node(t('region_of_exploitation'), 600, 280);
-n1.id = 1;
-n2.id = 2;
-n3.id = 3;
+n1.showId = true;
+n2.showId = true;
+n3.showId = true;
 
 const roundNodesStyle = {
   padding: '15px',
   borderRadius: '50%',
-}
+};
 
 const n4 = new Node(t('FL'), 80, 450, orange, '0.98 | 58%', roundNodesStyle);
 const n5 = new Node(t('FL'), 280, 450, blue, '0.62 | 9%', roundNodesStyle);
@@ -75,10 +75,7 @@ const legend = (
 export default {
   title: t('west_and_central_africa'),
   key: 'graph3',
-  nodes: nodes,
-  edges: edges,
-  width: 800,
-  height: 510,
+  graph: new Graph(nodes, edges, 800, 510),
   explanation: t('explanation'),
   legend: legend,
 };

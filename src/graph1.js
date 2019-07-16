@@ -1,24 +1,24 @@
 import React from 'react';
-import {Node, Edge} from 'react-graph-flow';
+import {Node, Edge, Graph} from 'react-graph-flow';
 import {red, blue} from './graph_colors';
 import Legend from './Legend';
 import translate from './translate';
 
-const t = k => translate(['graph1', k])
+const t = k => translate(['graph1', k]);
 
 const genderNode = new Node(t('gender'), 180, 50);
 const maritalStatusNode = new Node(t('marital_status'), 370, 220);
 const recruitmentNode = new Node(t('recruitment'), 180, 400);
 const activityNode = new Node(t('believed_activity'), 580, 400);
-genderNode.id = 1;
-maritalStatusNode.id = 2;
-recruitmentNode.id = 3;
-activityNode.id = 4;
+genderNode.showId = true;
+maritalStatusNode.showId = true;
+recruitmentNode.showId = true;
+activityNode.showId = true;
 
 const roundNodesStyle = {
   padding: '15px',
   borderRadius: '50%',
-}
+};
 
 const genderFLNode = new Node(t('FL'), 60, 220, blue, '0.98 | 35%', roundNodesStyle);
 const recruitmentFLNode = new Node(t('FL'), 60, 550, blue, '0.73 | 14%', roundNodesStyle);
@@ -85,10 +85,7 @@ const legend = (
 export default {
   title: t('SEE_and_central_asia'),
   key: 'graph1',
-  nodes: nodes,
-  edges: edges,
-  width: 800,
-  height: 620,
+  graph: new Graph(nodes, edges, 800, 620),
   explanation: t('explanation'),
   legend: legend,
 };

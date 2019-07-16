@@ -1,26 +1,26 @@
 import React from 'react';
-import {Node, Edge} from 'react-graph-flow';
+import {Node, Edge, Graph} from 'react-graph-flow';
 import {red, blue, orange} from './graph_colors';
 import Legend from './Legend';
 import translate from './translate';
 
-const t = k => translate(['graph2', k])
+const t = k => translate(['graph2', k]);
 
 const n1 = new Node(t('age'), 320, 50);
 const n2 = new Node(t('economic_status'), 130, 200);
 const n3 = new Node(t('region_of_exploitation'), 530, 200);
 const n4 = new Node(t('gender'), 665, 400);
 const n5 = new Node(t('initial_contact'), 500, 550);
-n1.id = 1;
-n2.id = 2;
-n3.id = 3;
-n4.id = 4;
-n5.id = 5;
+n1.showId = true;
+n2.showId = true;
+n3.showId = true;
+n4.showId = true;
+n5.showId = true;
 
 const roundNodesStyle = {
   padding: '15px',
   borderRadius: '50%',
-}
+};
 
 const n6 = new Node(t('FL'), 50, 400, orange, '0.80 | 4%', roundNodesStyle);
 const n7 = new Node(t('FL'), 230, 400, blue, '0.75 | 15%', roundNodesStyle);
@@ -114,10 +114,7 @@ const legend = (
 export default {
   title: t('asia_and_the_pacific'),
   key: 'graph2',
-  nodes: nodes,
-  edges: edges,
-  width: 800,
-  height: 800,
+  graph: new Graph(nodes, edges, 800, 800),
   explanation: t('explanation'),
   legend: legend,
-}
+};
