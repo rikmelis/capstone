@@ -1,6 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
-import {Diagram} from 'react-graph-flow';
+import Diagram from './Diagram';
 import graph1 from './graph1';
 import graph2 from './graph2';
 import graph3 from './graph3';
@@ -46,7 +46,7 @@ export default class Graphs extends React.Component {
       			</div>
       		)}
       	</div>
-        <Diagram key={key} graph={graph} editMode={false}>{legend}</Diagram>
+        <Diagram key={key} graph={graph}>{legend}</Diagram>
         <div className={'explanation-container'}>
           <div className={'show-explanation-button'} onClick={() => this.setState({showExplanation: !showExplanation})}>
             {translate('what_does_this_mean')}

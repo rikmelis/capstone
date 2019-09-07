@@ -1,0 +1,208 @@
+{
+  "width": 800,
+  "height": 800,
+  "nodes": [
+    {
+      "text": "age*",
+      "x": 320,
+      "y": 50,
+      "width": 102,
+      "height": 53,
+      "style": {},
+      "id": 0,
+      "showId": true
+    },
+    {
+      "text": "economic status",
+      "x": 130,
+      "y": 200,
+      "width": 149,
+      "height": 77,
+      "style": {},
+      "id": 1,
+      "showId": true
+    },
+    {
+      "text": "region of exploitation",
+      "x": 530,
+      "y": 200,
+      "width": 167,
+      "height": 77,
+      "style": {},
+      "id": 2,
+      "showId": true
+    },
+    {
+      "text": "gender",
+      "x": 665,
+      "y": 400,
+      "width": 125,
+      "height": 53,
+      "style": {},
+      "id": 3,
+      "showId": true
+    },
+    {
+      "text": "initial contact\nto recruiter",
+      "x": 500,
+      "y": 550,
+      "width": 183,
+      "height": 77,
+      "style": {},
+      "id": 4,
+      "showId": true
+    },
+    {
+      "text": "FL",
+      "x": 50,
+      "y": 400,
+      "width": 52,
+      "height": 53,
+      "color": "#F9964F",
+      "label": "0.80 | 4%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 5,
+      "showId": false
+    },
+    {
+      "text": "FL",
+      "x": 230,
+      "y": 400,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.75 | 15%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 6,
+      "showId": false
+    },
+    {
+      "text": "FL",
+      "x": 400,
+      "y": 400,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.92 | 75%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 7,
+      "showId": false
+    },
+    {
+      "text": "FL",
+      "x": 745,
+      "y": 550,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.90 | 2%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 8,
+      "showId": false
+    },
+    {
+      "text": "FL",
+      "x": 350,
+      "y": 740,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.92 | <1%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 9,
+      "showId": false
+    },
+    {
+      "text": "SE",
+      "x": 650,
+      "y": 740,
+      "width": 54,
+      "height": 53,
+      "color": "#C2514F",
+      "label": "0.89 | 3%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 10,
+      "showId": false
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1,
+      "color": "#1D487A",
+      "label": "< 38"
+    },
+    {
+      "from": 0,
+      "to": 2,
+      "color": "#1D487A",
+      "label": "≥ 38"
+    },
+    {
+      "from": 1,
+      "to": 5,
+      "color": "#F9964F",
+      "label": "very poor"
+    },
+    {
+      "from": 1,
+      "to": 6,
+      "color": "#1D487A",
+      "label": "poor /\nstandard /\nwell-off"
+    },
+    {
+      "from": 2,
+      "to": 7,
+      "color": "#1D487A",
+      "label": "Asia & P /\nNorth & Central America /\nAmerica / East Africa /\nMENA / SEE & Central Asia"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "color": "#C2514F",
+      "label": "EU & EEA / Soutern Africa /\nWest & Central Africa"
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "color": "#C2514F",
+      "label": "female"
+    },
+    {
+      "from": 3,
+      "to": 8,
+      "color": "#1D487A",
+      "label": "male"
+    },
+    {
+      "from": 4,
+      "to": 9,
+      "color": "#1D487A",
+      "label": "employment agency /\ninternet advertisement /\nother"
+    },
+    {
+      "from": 4,
+      "to": 10,
+      "color": "#C2514F",
+      "label": "personal contact"
+    }
+  ]
+}

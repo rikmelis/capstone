@@ -1,0 +1,162 @@
+{
+  "width": 800,
+  "height": 620,
+  "nodes": [
+    {
+      "text": "gender",
+      "x": 180,
+      "y": 50,
+      "width": 125,
+      "height": 53,
+      "style": {},
+      "id": 0
+    },
+    {
+      "text": "marital status",
+      "x": 370,
+      "y": 220,
+      "width": 123,
+      "height": 77,
+      "style": {},
+      "id": 1
+    },
+    {
+      "text": "recruitment",
+      "x": 180,
+      "y": 400,
+      "width": 167,
+      "height": 53,
+      "style": {},
+      "id": 2
+    },
+    {
+      "text": "believed activity**: factory work",
+      "x": 580,
+      "y": 400,
+      "width": 233,
+      "height": 77,
+      "style": {},
+      "id": 3
+    },
+    {
+      "text": "FL",
+      "x": 60,
+      "y": 220,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.98 | 35%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 4
+    },
+    {
+      "text": "FL",
+      "x": 60,
+      "y": 550,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.73 | 14%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 5
+    },
+    {
+      "text": "SE",
+      "x": 300,
+      "y": 550,
+      "width": 54,
+      "height": 53,
+      "color": "#C2514F",
+      "label": "0.80 | 2%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 6
+    },
+    {
+      "text": "FL",
+      "x": 450,
+      "y": 550,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.89 | 2%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 7
+    },
+    {
+      "text": "SE",
+      "x": 700,
+      "y": 550,
+      "width": 54,
+      "height": 53,
+      "color": "#C2514F",
+      "label": "0.81 | 48%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 8
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 4,
+      "color": "#1D487A",
+      "label": "male / unknown"
+    },
+    {
+      "from": 0,
+      "to": 1,
+      "color": "#C2514F",
+      "label": "female"
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "color": "#1D487A",
+      "label": "married / widowed"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "color": "#C2514F",
+      "label": "common law / divorced / separated / single"
+    },
+    {
+      "from": 2,
+      "to": 5,
+      "color": "#1D487A",
+      "label": "yes"
+    },
+    {
+      "from": 2,
+      "to": 6,
+      "color": "#C2514F",
+      "label": "no"
+    },
+    {
+      "from": 3,
+      "to": 7,
+      "color": "#1D487A",
+      "label": "yes"
+    },
+    {
+      "from": 3,
+      "to": 8,
+      "color": "#C2514F",
+      "label": "no"
+    }
+  ]
+}

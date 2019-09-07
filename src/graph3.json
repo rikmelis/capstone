@@ -1,0 +1,134 @@
+{
+  "width": 800,
+  "height": 510,
+  "nodes": [
+    {
+      "text": "region of\nexploitation",
+      "x": 380,
+      "y": 60,
+      "width": 167,
+      "height": 77,
+      "style": {},
+      "id": 0,
+      "showId": true
+    },
+    {
+      "text": "initial contact\nto recruiter",
+      "x": 180,
+      "y": 280,
+      "width": 183,
+      "height": 77,
+      "style": {},
+      "id": 1,
+      "showId": true
+    },
+    {
+      "text": "region of\nexploitation",
+      "x": 600,
+      "y": 280,
+      "width": 167,
+      "height": 77,
+      "style": {},
+      "id": 2,
+      "showId": true
+    },
+    {
+      "text": "FL",
+      "x": 80,
+      "y": 450,
+      "width": 52,
+      "height": 53,
+      "color": "#F9964F",
+      "label": "0.98 | 58%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 3,
+      "showId": false
+    },
+    {
+      "text": "FL",
+      "x": 280,
+      "y": 450,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.62 | 9%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 4,
+      "showId": false
+    },
+    {
+      "text": "FL",
+      "x": 480,
+      "y": 450,
+      "width": 52,
+      "height": 53,
+      "color": "#1D487A",
+      "label": "0.94 | 6%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 5,
+      "showId": false
+    },
+    {
+      "text": "SE",
+      "x": 700,
+      "y": 450,
+      "width": 54,
+      "height": 53,
+      "color": "#C2514F",
+      "label": "0.83 | 27%",
+      "style": {
+        "padding": "15px",
+        "borderRadius": "50%"
+      },
+      "id": 6,
+      "showId": false
+    }
+  ],
+  "edges": [
+    {
+      "from": 0,
+      "to": 1,
+      "color": "#F9964F",
+      "label": "region of citizenship"
+    },
+    {
+      "from": 0,
+      "to": 2,
+      "color": "#C2514F",
+      "label": "foreign region"
+    },
+    {
+      "from": 1,
+      "to": 3,
+      "color": "#F9964F",
+      "label": "sold by\nfamily member"
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "color": "#1D487A",
+      "label": "personal contact / other"
+    },
+    {
+      "from": 2,
+      "to": 5,
+      "color": "#1D487A",
+      "label": "African continent"
+    },
+    {
+      "from": 2,
+      "to": 6,
+      "color": "#C2514F",
+      "label": "foreign continent"
+    }
+  ]
+}

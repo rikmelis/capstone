@@ -3,6 +3,7 @@ import {Node, Edge, Graph} from 'react-graph-flow';
 import {red, blue} from './graph_colors';
 import Legend from './Legend';
 import translate from './translate';
+// import graph1 from './graph1.json';
 
 const t = k => translate(['graph1', k]);
 
@@ -86,6 +87,7 @@ export default {
   title: t('SEE_and_central_asia'),
   key: 'graph1',
   graph: new Graph(nodes, edges, 800, 620),
+  // graph: Graph.deserialize(graph1),
   explanation: t('explanation'),
   legend: legend,
 };

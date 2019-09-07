@@ -25,12 +25,12 @@ export default class App extends React.Component {
           </div>
         </div>
         <div className={'page'}>
-          <div className={'intro'}>
+          <div className={'block intro'}>
             <p>{translate(['introduction', 'p1'])}</p>
             <p>{translate(['introduction', 'p2'])}</p>
           </div>
           <h3>{translate(['header', 'reports'])}</h3>
-          <div className={'block with-image'}>
+          <div className={'block with-background'}>
             <div className={'subheader'}>{translate(['subheader', 'main_findings'])}</div>
             <div className='paragraph'>
               {translate(['block', 'main_findings', 'p1'])}
@@ -44,7 +44,7 @@ export default class App extends React.Component {
             <DownloadIcon/>
             {translate(['button', 'main_findings'])}
           </a>
-          <div className={'block with-image'}>
+          <div className={'block with-background'}>
             <div className={'subheader'}>{translate(['subheader', 'methodology'])}</div>
             <div className='text'>
               {translate(['block', 'methodology'])}

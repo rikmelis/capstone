@@ -3,6 +3,7 @@ import {Node, Edge, Graph} from 'react-graph-flow';
 import {red, blue, orange} from './graph_colors';
 import Legend from './Legend';
 import translate from './translate';
+// import graph3 from './graph3.json';
 
 const t = k => translate(['graph3', k]);
 
@@ -76,6 +77,7 @@ export default {
   title: t('west_and_central_africa'),
   key: 'graph3',
   graph: new Graph(nodes, edges, 800, 510),
+  // graph: Graph.deserialize(graph3),
   explanation: t('explanation'),
   legend: legend,
 };
