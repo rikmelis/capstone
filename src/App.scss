@@ -11,7 +11,7 @@
   cursor: pointer;
 }
 
-.title {
+.page-title {
   background-color: #043a4c;
   color: white;
   font-size: 45px;
@@ -227,6 +227,51 @@
 .expand-icon {
   width: 30px;
   color: #404141;
+}
+
+.how-to-read {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  z-index: 4;
+
+  // &:not(:hover) .pop-up {
+  //   display: none;
+  // }
+
+  .question-icon {
+    width: 40px;
+    color: #043a4c;
+    cursor: pointer;
+  }
+
+  .close-icon {
+    width: 20px;
+    height: 20px;
+    color: #043a4c;
+    cursor: pointer;
+  }
+
+  .pop-up {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #043a4c;
+    border-radius: 10px;
+    color: #043a4c;
+    text-align: justify;
+
+    .title {
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .paragraph {
+      margin-top: 10px;
+    }
+  }
 }
 
 .legend {

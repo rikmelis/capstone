@@ -109,5 +109,12 @@
 		"forced_labour_in_foreign_country": "forced labour in foreign country",
 		"sexual_exploitation_in_foreign_country": "sexual exploitation in foreign country",
 		"explanation": "The classification tree \"West and Central Africa\" shows that the region of exploitation plays an influential role in predicting the type of exploitation a West and Central African victim is likely to be subjected to. In general, it seems that victims from this region are predicted to be victims of forced labour, if they are trafficked for exploitation on the African continent. By contrast, victims who are transported to another continent tend to experience sexual exploitation. If the identified victims are trafficked within West and Central Africa and are sold by members of their family, they are predicted to be exploited in forced labour within the borders of their country of citizenship with a 98% predicted probability. Other victims trafficked on the African continent tend to experience forced labour in a foreign country."
+	},
+	"how_to_read": {
+		"title": "How to read the tree?",
+		"p1": "The classification tree can be read in a similar way as a flowchart. Each numbered box stands for a split in the data based on a specific attribute. The circles represent the outcome: either sexual exploitation, forced labour, or in some cases, forced labour in the country of citizenship, and forced labour in a foreign country.",
+		"p2": "The numbers beneath the circles are the predicted probabilities (on the left), and the percentage of cases that fall into a given outcome category (on the right). The predicted probability is a measure of how many individuals are expected to fall into the same outcome category, given that they share the same characteristics.",
+		"p3": "The higher up an attribute / characteristic appears in the tree the more insightful it is in classifying the observations based on the outcome variable.",
+		"p4": "For example, in the tree \"South-Eastern Europe and Central Asia\": Victims, who are female, married or widowed, and are recruited, have a 0.73 (73%) predicted probability of landing in labour exploitation compared to sexual exploitation. 14% of the observations included are represented with this rule."
 	}
 }

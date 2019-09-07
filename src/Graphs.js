@@ -6,6 +6,7 @@ import graph2 from './graph2';
 import graph3 from './graph3';
 import {ExpandMore, ExpandLess} from 'styled-icons/material';
 import translate from './translate';
+import HowToRead from './HowToRead';
 
 export default class Graphs extends React.Component {
   constructor(props) {
@@ -45,7 +46,10 @@ export default class Graphs extends React.Component {
       			</div>
       		)}
       	</div>
-        <Diagram key={key} graph={graph}>{legend}</Diagram>
+        <Diagram key={key} graph={graph}>
+          <HowToRead/>
+          {legend}
+        </Diagram>
         <div className={'explanation-container'}>
           <div className={'show-explanation-button'} onClick={() => this.setState({showExplanation: !showExplanation})}>
             {translate('what_does_this_mean')}

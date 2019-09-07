@@ -18,7 +18,7 @@ export default class App extends React.Component {
         <div className={'language-selector'} onClick={toggleLanguage}>
           {language === 'en' ? 'Deutsch' : 'English'}
         </div>
-        <div className={'title'}>
+        <div className={'page-title'}>
           <div className={'block-container'}>
             <div>{translate('page_title')}</div>
             <div className={'subtitle'}>{translate('subtitle')}</div>
