@@ -6,16 +6,15 @@
 		"p2": "We find that, for example, in South-Eastern Europe and Central Asia gender seems to be a determining characteristic for the type of exploitation, while in the Asia and the Pacific region, identified victims tend to be subjected to forced labour regardless of their gender. Also, we find that the marital status of the identified victim, the activity this person believed to undertake at the country of destination and how the contact to the recruiter was initiated influences where and how an individual is being exploited. Through our machine learning strategies, we were further able to map complex interactions of such characteristics. Detailed information on our main findings as well as our methodological approach can be found in the two reports below."
 	},
 	"header": {
-		"reports": "The Reports",
+		"determining_type": "change header...",
+		"main_findings": "Main Findings Report",
+		"methodology": "Methodology Report",
 		"project": "The Project",
 		"team": "The Team",
 		"get_in_touch": "Get in touch!"
 	},
-	"subheader": {
-		"main_findings": "Main Findings Report",
-		"methodology": "Methodology Report"
-	},
 	"block": {
+		"determining_type": "change text...",
 		"main_findings": {
 			"p1": "Our analysis of human trafficking victim characteristics is the first to apply machine learning techniques to IOM’s database of all their registered victims. The database consists of qualitative and quantitative information on over 50’000 registered victims interviewed by IOM case workers. Our analysis’ findings support previously formulated assumptions on how an individual’s characteristics, such as age, gender, origin and economic status renders them more or less vulnerable to specific types of exploitation. Examples of such assumptions are that young women are believed to tend to be victims of sexual exploitation and that labour migration presumably renders individuals more vulnerable to exploitation. However, our analysis also reveals as-of-yet rarely studied, intricate patterns of how reported victims’ characteristics, their entry into the trafficking process, and type of exploitation interact differently across regions. The three classification trees depict the main results of our analysis.",
 			"p2": "The classification tree \"South-Eastern Europe and Central Asia\" below, for example, shows that men are much more likely to be subjected to forced labour. For women in this region, however, marital status becomes a defining victim characteristic. Women whose marital status is common law, divorced, separated, or single, and who did not believe that their activity upon arrival was going to be factory work, are much more likely to be sexually exploited, while women who are married or widowed and have been recruited are more likely to be subjected to forced labour."

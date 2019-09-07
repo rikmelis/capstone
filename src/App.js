@@ -29,9 +29,12 @@ export default class App extends React.Component {
             <p>{translate(['introduction', 'p1'])}</p>
             <p>{translate(['introduction', 'p2'])}</p>
           </div>
-          <h3>{translate(['header', 'reports'])}</h3>
+          <h3>{translate(['header', 'determining_type'])}</h3>
+          <div className={'block'}>
+            {translate(['block', 'determining_type'])}
+          </div>
           <div className={'block with-background'}>
-            <div className={'subheader'}>{translate(['subheader', 'main_findings'])}</div>
+            <div className={'subheader'}>{translate(['header', 'main_findings'])}</div>
             <div className='paragraph'>
               {translate(['block', 'main_findings', 'p1'])}
             </div>
@@ -45,7 +48,7 @@ export default class App extends React.Component {
             {translate(['button', 'main_findings'])}
           </a>
           <div className={'block with-background'}>
-            <div className={'subheader'}>{translate(['subheader', 'methodology'])}</div>
+            <div className={'subheader'}>{translate(['header', 'methodology'])}</div>
             <div className='text'>
               {translate(['block', 'methodology'])}
             </div>
