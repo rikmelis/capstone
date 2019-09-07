@@ -8,7 +8,6 @@ export default class AppContainer extends React.Component {
 
 		this.state = {
 			language: localStorage.getItem('language') || 'en',
-			showLegend: true,
 		};
 	}
 
@@ -20,18 +19,11 @@ export default class AppContainer extends React.Component {
 		});
 	}
 
-	toggleShowLegend() {
-		this.setState({
-			showLegend: !this.state.showLegend,
-		});
-	}
-
 	render() {
 	  return (
     	<Context.Provider value={{
     		...this.state,
     		toggleLanguage: () => this.toggleLanguage(),
-    		toggleShowLegend: () => this.toggleShowLegend(),
     	}}>
 	    	<App/>
 	    </Context.Provider>

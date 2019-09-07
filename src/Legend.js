@@ -1,15 +1,8 @@
 import React from 'react';
-import {ExpandMore, ExpandLess} from 'styled-icons/material';
-import {Context} from './store';
 import translate from './translate';
 
 export default class Legend extends React.Component {
 	render() {
-		const {
-			showLegend,
-			toggleShowLegend,
-		} = this.context;
-
 		const {
 			style,
 			children,
@@ -17,14 +10,9 @@ export default class Legend extends React.Component {
 
 		return (
 		  <div className={'legend'} style={style}>
-		    <div className={'show-legend-button'} onClick={toggleShowLegend}>
-		      {translate('legend')}
-					<div className={'expand-icon'}>{showLegend ? <ExpandMore/> : <ExpandLess/>}</div>
-		    </div>
-		    {showLegend && children}
+		    <div className={'legend-title'}>{translate('legend')}</div>
+		    {children}
 		  </div>
 		);
 	}
 }
-
-Legend.contextType = Context;

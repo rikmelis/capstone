@@ -14,7 +14,6 @@ export default class Graphs extends React.Component {
     this.state = {
       selectedGraph: 0,
       showExplanation: false,
-      showLegend: true,
     };
   }
 
