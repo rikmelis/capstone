@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4391fbe0bd2007f16a6404878d28a723",
+    "revision": "457b2b5016d3c8b86ea0758a073c1dbe",
     "url": "/capstone/index.html"
   },
   {
-    "revision": "7aca0e518651928184b6",
-    "url": "/capstone/static/css/main.39765805.chunk.css"
+    "revision": "a7dfc4bb714133aa4d60",
+    "url": "/capstone/static/css/main.02125b95.chunk.css"
   },
   {
-    "revision": "67fc30eb6d4cd5e68fc6",
-    "url": "/capstone/static/js/2.1094f966.chunk.js"
+    "revision": "ac21e34ed9b337bd9ee6",
+    "url": "/capstone/static/js/2.7b99e633.chunk.js"
   },
   {
-    "revision": "7aca0e518651928184b6",
-    "url": "/capstone/static/js/main.234296ea.chunk.js"
+    "revision": "a7dfc4bb714133aa4d60",
+    "url": "/capstone/static/js/main.6af05513.chunk.js"
   },
   {
     "revision": "c9f29886e7c070c80285",
@@ -24,8 +24,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capstone/static/media/janine.d60178bf.jpeg"
   },
   {
+    "revision": "840ed56fb009d044634bb7bb746b89b8",
+    "url": "/capstone/static/media/jenny.840ed56f.jpeg"
+  },
+  {
+    "revision": "ec9da9c8974b5983390a5d66b39efcf7",
+    "url": "/capstone/static/media/judith.ec9da9c8.jpeg"
+  },
+  {
     "revision": "1c32d785398e3a7eaab0e9b876903cc6",
     "url": "/capstone/static/media/main-findings.1c32d785.pdf"
+  },
+  {
+    "revision": "7f506ed8b7c04d7e095a66fa81e3a30f",
+    "url": "/capstone/static/media/marco.7f506ed8.jpeg"
   },
   {
     "revision": "1c32d785398e3a7eaab0e9b876903cc6",
@@ -34,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "792de62671698c750b12af37a0dc3b1f",
     "url": "/capstone/static/media/patrik.792de626.jpeg"
-  },
-  {
-    "revision": "295af695cc6b970131e2c739127c5091",
-    "url": "/capstone/static/media/placeholder.295af695.png"
   },
   {
     "revision": "0918bd2d04aef1784d7c39b0328a072c",
