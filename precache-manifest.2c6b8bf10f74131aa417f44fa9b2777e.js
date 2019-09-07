@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce9d1758bd04437ccf18a09068413ed1",
+    "revision": "dd2c2e0e6135523ca6d40597929a5af8",
     "url": "/capstone/index.html"
   },
   {
