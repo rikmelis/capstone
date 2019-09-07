@@ -18,7 +18,7 @@ export default class App extends React.Component {
         <div className={'language-selector'} onClick={toggleLanguage}>
           {language === 'en' ? 'Deutsch' : 'English'}
         </div>
-        <div className='title'>
+        <div className={'title'}>
           <div className={'block-container'}>
             <div>{translate('page_title')}</div>
             <div className={'subtitle'}>{translate('subtitle')}</div>
@@ -26,21 +26,21 @@ export default class App extends React.Component {
         </div>
         <div className={'page'}>
           <div className={'block intro'}>
-            <p>{translate(['introduction', 'p1'])}</p>
-            <p>{translate(['introduction', 'p2'])}</p>
+            <div className={'paragraph'}>{translate(['introduction', 'p1'])}</div>
+            <div className={'paragraph'}>{translate(['introduction', 'p2'])}</div>
           </div>
-          <h3>{translate(['header', 'determining_type'])}</h3>
           <div className={'block'}>
-            <p>{translate(['block', 'determining_type', 'p1'])}</p>
-            <p>{translate(['block', 'determining_type', 'p2'])}</p>
-            <p>{translate(['block', 'determining_type', 'p3'])}</p>
+            <div className={'header'}>{translate(['header', 'determining_type'])}</div>
+            <div className={'paragraph'}>{translate(['block', 'determining_type', 'p1'])}</div>
+            <div className={'paragraph'}>{translate(['block', 'determining_type', 'p2'])}</div>
+            <div className={'paragraph'}>{translate(['block', 'determining_type', 'p3'])}</div>
           </div>
           <div className={'block with-background'}>
-            <div className={'subheader'}>{translate(['header', 'main_findings'])}</div>
-            <div className='paragraph'>
+            <div className={'header'}>{translate(['header', 'main_findings'])}</div>
+            <div className={'paragraph'}>
               {translate(['block', 'main_findings', 'p1'])}
             </div>
-            <div className='paragraph'>
+            <div className={'paragraph'}>
               {translate(['block', 'main_findings', 'p2'])}
             </div>
           </div>
@@ -50,8 +50,8 @@ export default class App extends React.Component {
             {translate(['button', 'main_findings'])}
           </a>
           <div className={'block with-background'}>
-            <div className={'subheader'}>{translate(['header', 'methodology'])}</div>
-            <div className='text'>
+            <div className={'header'}>{translate(['header', 'methodology'])}</div>
+            <div className={'paragraph'}>
               {translate(['block', 'methodology'])}
             </div>
           </div>
@@ -59,24 +59,30 @@ export default class App extends React.Component {
             <DownloadIcon/>
             {translate(['button', 'methodology'])}
           </a>
-          <h3>{translate(['header', 'project'])}</h3>
           <div className={'block'}>
-            {translate(['block', 'project'])} <a href="https://www.ipz.uzh.ch/en/studium/MA/capstones.html" target='_blank' rel='noopener noreferrer'>{translate(['block', 'here'])}</a>.
+            <div className={'header'}>{translate(['header', 'project'])}</div>
+            <div className={'paragraph'}>
+              {translate(['block', 'project'])} <a href='https://www.ipz.uzh.ch/en/studium/MA/capstones.html' target='_blank' rel='noopener noreferrer'>{translate(['block', 'here'])}</a>.
+            </div>
           </div>
-          <h3>{translate(['header', 'team'])}</h3>
           <div className={'block'}>
-            {translate(['block', 'team'])}
+            <div className={'header'}>{translate(['header', 'team'])}</div>
+            <div className={'paragraph'}>
+              {translate(['block', 'team'])}
+            </div>
           </div>
           <Pictures/>
         </div>
         <div className={'footer'}>
           <div className={'block-container'}>
-            <h3>{translate(['header', 'get_in_touch'])}</h3>
             <div className={'block'}>
-              {translate(['block', 'get_in_touch'])}
+              <div className={'header'}>{translate(['header', 'get_in_touch'])}</div>
+              <div className={'paragraph'}>
+                {translate(['block', 'get_in_touch'])}
+              </div>
             </div>
             <div className={'contact-icons'}>
-              <a className={'mail-link'} href={`mailto:theoda.woeffray@bluewin.ch`}><MailIcon/></a>
+              <a className={'mail-link'} href={`mailto:ahtd@fake.com`}><MailIcon/></a>
               <a className={'github-link'} href={`https://github.com/rikmelis/capstone`} target='_blank' rel='noopener noreferrer'><GithubIcon/></a>
             </div>
           </div>
