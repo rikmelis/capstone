@@ -31,7 +31,9 @@ export default class App extends React.Component {
           </div>
           <h3>{translate(['header', 'determining_type'])}</h3>
           <div className={'block'}>
-            {translate(['block', 'determining_type'])}
+            <p>{translate(['block', 'determining_type', 'p1'])}</p>
+            <p>{translate(['block', 'determining_type', 'p2'])}</p>
+            <p>{translate(['block', 'determining_type', 'p3'])}</p>
           </div>
           <div className={'block with-background'}>
             <div className={'subheader'}>{translate(['header', 'main_findings'])}</div>
