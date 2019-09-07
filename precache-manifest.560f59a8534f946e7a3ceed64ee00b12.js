@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "457b2b5016d3c8b86ea0758a073c1dbe",
+    "revision": "ce9d1758bd04437ccf18a09068413ed1",
     "url": "/capstone/index.html"
   },
   {
-    "revision": "a7dfc4bb714133aa4d60",
-    "url": "/capstone/static/css/main.02125b95.chunk.css"
+    "revision": "fd184eb896e49986515a",
+    "url": "/capstone/static/css/main.95172c22.chunk.css"
   },
   {
-    "revision": "ac21e34ed9b337bd9ee6",
-    "url": "/capstone/static/js/2.7b99e633.chunk.js"
+    "revision": "e25c92d36155f37b3f3b",
+    "url": "/capstone/static/js/2.6b98f9de.chunk.js"
   },
   {
-    "revision": "a7dfc4bb714133aa4d60",
-    "url": "/capstone/static/js/main.6af05513.chunk.js"
+    "revision": "fd184eb896e49986515a",
+    "url": "/capstone/static/js/main.de95357f.chunk.js"
   },
   {
     "revision": "c9f29886e7c070c80285",
