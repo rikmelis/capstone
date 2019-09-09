@@ -10,18 +10,36 @@ export default class HowToRead extends React.Component {
 		this.state = {
 			open: false,
 		};
+
+		this.closeOnEscapePress = this.closeOnEscapePress.bind(this);
+  }
+
+  open() {
+  	document.addEventListener('keydown', this.closeOnEscapePress);
+  	this.setState({open: true});
+  }
+
+  close() {
+  	document.removeEventListener('keydown', this.closeOnEscapePress);
+  	this.setState({open: false});
+  }
+
+  closeOnEscapePress(event) {
+  	if (event.key === 'Escape') {
+  		this.close();
+  	}
   }
 
 	render() {
 		return (
       <div className={'how-to-read'}>
-        <Question className={'question-icon'} onClick={(event) => this.setState({open: true})}/>
+        <Question className={'question-icon'} onClick={() => this.open()}/>
         {this.state.open &&
-        	<div className={'pop-up-container'} onClick={(event) => this.setState({open: false})}>
+        	<div className={'pop-up-container'} onClick={(event) => this.close()}>
 	        	<div className={'pop-up'} onClick={(event) => event.stopPropagation()}>
 		          <div className={'title'}>
 		          	{translate(['how_to_read', 'title'])}
-		          	{<Close className={'close-icon'} onClick={() => this.setState({open: false})}/>}
+		          	<Close className={'close-icon'} onClick={() => this.close()}/>
 		          </div>
 		          <div className={'paragraph'}>{translate(['how_to_read', 'p1'])}</div>
 		          <div className={'paragraph'}>{translate(['how_to_read', 'p2'])}</div>
