@@ -6,23 +6,6 @@ const translations = {
 	de: require('./de.json'),
 };
 
-export const translate = (translationKey) => {
-	const path = typeof(translationKey) === 'string' ? [translationKey] : translationKey;
-
-	let t = translations['en'];
-	try {
-		path.forEach(k => {
-			if (!(k in t)) {
-				throw new Error();
-			}
-			t = t[k];
-		});
-	} catch (e) {
-		return 'missing translation';
-	}
-	return t;
-}
-
 const Translation = (props) => {
   const {language} = useContext(Context);
 	const {translationKey} = props;

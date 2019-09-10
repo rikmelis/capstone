@@ -45,7 +45,7 @@ export default class App extends React.Component {
             </div>
           </div>
           <Graphs key={`language-${language}`}/>
-          <a className={'download-button'} href={MainFindingsPdf} target='_blank' rel='noopener noreferrer'>
+          <a className={'download-button'} href={MainFindingsPdf} target={'_blank'} rel={'noopener noreferrer'}>
             <DownloadIcon/>
             {translate(['button', 'main_findings'])}
           </a>
@@ -55,14 +55,23 @@ export default class App extends React.Component {
               {translate(['block', 'methodology'])}
             </div>
           </div>
-          <a className={'download-button'} href={MethodologyPdf} target='_blank' rel='noopener noreferrer'>
+          <a className={'download-button'} href={MethodologyPdf} target={'_blank'} rel={'noopener noreferrer'}>
             <DownloadIcon/>
             {translate(['button', 'methodology'])}
           </a>
           <div className={'block'}>
             <div className={'header'}>{translate(['header', 'project'])}</div>
             <div className={'paragraph'}>
-              {translate(['block', 'project'])} <a href='https://www.ipz.uzh.ch/en/studium/MA/capstones.html' target='_blank' rel='noopener noreferrer'>{translate(['block', 'here'])}</a>.
+              {translate(['block', 'project'])} <a
+                href={language === 'en' ?
+                  "https://www.ipz.uzh.ch/en/studium/MA/capstones.html" :
+                  "https://www.ipz.uzh.ch/de/studium/MA/Capstone-Courses.html"
+                }
+                target={'_blank'}
+                rel={'noopener noreferrer'}
+                >
+              {translate(['block', 'here'])}
+              </a>.
             </div>
           </div>
           <div className={'block'}>
@@ -83,7 +92,7 @@ export default class App extends React.Component {
             </div>
             <div className={'contact-icons'}>
               <a className={'mail-link'} href={`mailto:ahtd@fake.com`}><MailIcon/></a>
-              <a className={'github-link'} href={`https://github.com/rikmelis/capstone`} target='_blank' rel='noopener noreferrer'><GithubIcon/></a>
+              <a className={'github-link'} href={`https://github.com/rikmelis/capstone`} target={'_blank'} rel={'noopener noreferrer'}><GithubIcon/></a>
             </div>
           </div>
         </div>
