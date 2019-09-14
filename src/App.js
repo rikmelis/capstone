@@ -91,7 +91,7 @@ export default class App extends React.Component {
               </div>
             </div>
             <div className={'contact-icons'}>
-              <a className={'mail-link'} href={`mailto:ahtd@fake.com`}><MailIcon/></a>
+              <a className={'mail-link'} href={`mailto:capstone.trafficking@ipz.uzh.ch`}><MailIcon/></a>
               <a className={'github-link'} href={`https://github.com/rikmelis/capstone`} target={'_blank'} rel={'noopener noreferrer'}><GithubIcon/></a>
             </div>
           </div>
