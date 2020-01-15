@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc39a728b6d4d3c7c811a66b296ed3bc",
+    "revision": "75eda2bf94ee2ce3584f7a51fe56a697",
     "url": "/capstone/index.html"
   },
   {
-    "revision": "df04770b1b149918a8c3",
+    "revision": "cbbfdb74fca6d576af9e",
     "url": "/capstone/static/css/main.7e13dbf6.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capstone/static/js/2.6b98f9de.chunk.js"
   },
   {
-    "revision": "df04770b1b149918a8c3",
-    "url": "/capstone/static/js/main.3aea2eb1.chunk.js"
+    "revision": "cbbfdb74fca6d576af9e",
+    "url": "/capstone/static/js/main.cb9f83ba.chunk.js"
   },
   {
     "revision": "c9f29886e7c070c80285",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capstone/static/media/judith.ec9da9c8.jpeg"
   },
   {
-    "revision": "1c32d785398e3a7eaab0e9b876903cc6",
-    "url": "/capstone/static/media/main-findings.1c32d785.pdf"
+    "revision": "c38e36d0745a12da689965bed24876a2",
+    "url": "/capstone/static/media/main-findings.c38e36d0.pdf"
   },
   {
     "revision": "7f506ed8b7c04d7e095a66fa81e3a30f",
     "url": "/capstone/static/media/marco.7f506ed8.jpeg"
   },
   {
-    "revision": "1c32d785398e3a7eaab0e9b876903cc6",
-    "url": "/capstone/static/media/methodology.1c32d785.pdf"
+    "revision": "777151f04162eedf370b549a34783f60",
+    "url": "/capstone/static/media/methodology.777151f0.pdf"
   },
   {
     "revision": "792de62671698c750b12af37a0dc3b1f",
