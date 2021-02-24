@@ -83,7 +83,7 @@ const legend = (
   </Legend>
 );
 
-export default {
+const graph1 = {
   title: t('SEE_and_central_asia'),
   key: 'graph1',
   graph: new Graph(nodes, edges, 800, 620),
@@ -91,3 +91,5 @@ export default {
   explanation: t('explanation'),
   legend: legend,
 };
+
+export default graph1;

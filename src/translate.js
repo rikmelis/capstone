@@ -26,6 +26,8 @@ const Translation = (props) => {
 	return t;
 }
 
-export default (translationKey) => {
+const translate = (translationKey) => {
 	return <Translation translationKey={translationKey}/>;
 }
+
+export default translate;

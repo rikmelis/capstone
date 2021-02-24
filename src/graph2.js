@@ -112,7 +112,7 @@ const legend = (
   </Legend>
 );
 
-export default {
+const graph2 = {
   title: t('asia_and_the_pacific'),
   key: 'graph2',
   graph: new Graph(nodes, edges, 800, 800),
@@ -120,3 +120,5 @@ export default {
   explanation: t('explanation'),
   legend: legend,
 };
+
+export default graph2;

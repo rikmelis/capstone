@@ -1,38 +1,46 @@
 import React from 'react';
+import janine from './pictures/janine.jpeg';
+import patrik from './pictures/patrik.jpeg';
+import saro from './pictures/saro.jpeg';
+import theoda from './pictures/theoda.jpg';
+import jenny from './pictures/jenny.jpeg';
+import marco from './pictures/marco.jpeg';
+import judith from './pictures/judith.jpeg';
+
 
 export default class Pictures extends React.Component {
 	render() {
 		const row1 = [
 		 	{
 		 		name: 'Janine\nAlbiez',
-		 		picture: require('./pictures/janine.jpeg'),
+		 		picture: janine,
 		 	},
 		 	{
 		 		name: 'Patrik\nAus der Au',
-		 		picture: require('./pictures/patrik.jpeg'),
+		 		picture: patrik,
 		 	},
 		 	{
 		 		name: 'Saro\nGibilisco',
-		 		picture: require('./pictures/saro.jpeg'),
+		 		picture: saro,
 		 	},
 		 	{
 		 		name: 'Théoda\nWoeffray',
-		 		picture: require('./pictures/theoda.jpg'),
+		 		picture: theoda,
 		 	},
 		 	{
 		 		name: 'Jenny\nYin',
-		 		picture: require('./pictures/jenny.jpeg'),
+		 		picture: jenny,
 		 	},
 		];
 
 		const row2 = [
 		 	{
 		 		name: 'Prof. Dr.\nMarco\nSteenbergen',
-		 		picture: require('./pictures/marco.jpeg'),
+		 		picture: marco,
 		 	},
 		 	{
 		 		name: 'Dr.\nJudith\nSpirig',
-		 		picture: require('./pictures/judith.jpeg'),
+		 		picture: judith,
 		 	},
 		];
 

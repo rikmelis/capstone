@@ -6,11 +6,12 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^5.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-graph-flow": "^1.0.1",
-    "react-scripts": "3.0.1",
+    "react-scripts": "^4.0.3",
+    "sass": "^1.32.8",
     "styled-components": "^4.3.1",
     "styled-icons": "^8.1.0"
   },

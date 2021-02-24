@@ -73,7 +73,7 @@ const legend = (
   </Legend>
 );
 
-export default {
+const graph3 = {
   title: t('west_and_central_africa'),
   key: 'graph3',
   graph: new Graph(nodes, edges, 800, 510),
@@ -81,3 +81,5 @@ export default {
   explanation: t('explanation'),
   legend: legend,
 };
+
+export default graph3;
