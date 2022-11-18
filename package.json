@@ -10,7 +10,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-graph-flow": "^1.0.1",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "sass": "^1.32.8",
     "styled-components": "^4.3.1",
     "styled-icons": "^8.1.0"
